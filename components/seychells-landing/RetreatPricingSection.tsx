@@ -4,19 +4,22 @@ import { CheckCircle, XCircle } from "lucide-react";
 import React from "react";
 
 const RetreatPricingSection = () => {
-  const inclusions = [
-    "Luxury beachside villa stay",
-    "All daily meals included",
-    "Guided mindfulness sessions",
-    "Island exploration tours",
-  ];
+const inclusions = [
+  "Return flights (ex-Mumbai)",
+  "3 nights stay in Mahé",
+  "Breakfasts",
+  "Guided Mahé island tour with lunch",
+  "Full-day Praslin & La Digue tour with buffet lunch",
+  "Speedboat transfers",
+];
 
-  const exclusions = [
-    "International airfare",
-    "Personal expenses",
-    "Travel insurance",
-    "Optional excursions",
-  ];
+const exclusions = [
+  "Personal expenses",
+  "Early check-in / late check-out",
+  "Meals not mentioned",
+  "GST 5% & TCS as per govt rules",
+];
+
 
   return (
    <section
@@ -64,9 +67,9 @@ const RetreatPricingSection = () => {
 
   {/* Content */}
   <div className="relative z-10 py-6 px-8">
-    <h3 className="text-4xl font-extrabold mb-2 drop-shadow-lg">₹39,999</h3>
+    <h3 className="text-4xl font-extrabold mb-2 drop-shadow-lg">₹1,30,000</h3>
     <p className="text-white/90 text-sm md:text-base mb-4 truncate">
-      Full access to your transformative Seychelles retreat — stay, meals, sessions & more.
+      4 days of island-hopping in Seychelles with guided Mahé, Praslin, and La Digue tours, flights included.
     </p>
     <a
       href="#"

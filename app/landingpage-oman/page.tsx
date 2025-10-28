@@ -1,31 +1,37 @@
 import ContactCTASectionLanding from "@/components/oman-landing/ContactCTASectionLanding";
-// import FooterLanding from "@/components/landing1/FooterLanding";
-// import HeaderLanding from "@/components/landing1/landing1/HeaderLanding";
-import HeroLanding from "@/components/oman-landing/HeroLanding";
-import HolisticHealingSectionLanding from "@/components/oman-landing/HolisticHealingSectionLanding";
-
-import OmanExperienceLanding from "@/components/oman-landing/WellnessProgramsLanding";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import WhoThisIsForSection from "@/components/oman-landing/WhoThisIsSection";
-import LandingVenueSection from "@/components/oman-landing/landingVenueSection";
 import RetreatPricingSection from "@/components/oman-landing/RetreatPricingSection";
-import CTASectionLanding from "@/components/oman-landing/CTASectionLanding";
 import ItineraryHorizontalComponent from "@/components/oman-landing/ItenaryLanding";
+
+import Hero from "@/components/oman-landing/Hero";
+import AboutUs from "@/components/oman-landing/AboutUs";
+import Accommodations from "@/components/oman-landing/Accommodations";
+import Moments from "@/components/oman-landing/Moments";
+import AtAGlance from "@/components/oman-landing/AtAGlance";
+import BlogGuides from "@/components/oman-landing/BlogGuides";
+import FAQ from "@/components/oman-landing/FAQ";
+import Testimonial from "@/components/oman-landing/Testimonial";
+import ImageShowcase from "@/components/oman-landing/ImageShowcase";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       <SiteHeader />
-      <HeroLanding />
-      <OmanExperienceLanding />
-      <WhoThisIsForSection />
-      <HolisticHealingSectionLanding />
-      <RetreatPricingSection />
+
+      <Hero />
+      <AboutUs />
+      <Accommodations />
+      <Moments />
+      <AtAGlance />
       <ItineraryHorizontalComponent />
-      <LandingVenueSection />
-      <CTASectionLanding />
+      <BlogGuides />
+      <Testimonial />
+      <ImageShowcase />
+      <RetreatPricingSection />
+
       <ContactCTASectionLanding />
+      <FAQ />
       <SiteFooter />
     </div>
   );

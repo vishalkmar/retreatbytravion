@@ -7,42 +7,35 @@ import { Leaf, Coffee, Sunrise, Heart, Mountain } from "lucide-react";
 
 const ItineraryLandingV2 = () => {
   const days = [
-    {
-      day: "Day 1",
-      title: "Arrival & Grounding",
-      desc: "Arrive at the serene retreat space. Evening tea circle and gentle breathwork to settle into the environment.",
-      icon: <Leaf className="w-6 h-6 text-white" />,
-      color: "from-emerald-400 to-teal-500",
-    },
-    {
-      day: "Day 2",
-      title: "Inner Stillness",
-      desc: "Morning yoga and meditation followed by creative journaling and an open evening discussion.",
-      icon: <Mountain className="w-6 h-6 text-white" />,
-      color: "from-blue-400 to-cyan-500",
-    },
-    {
-      day: "Day 3",
-      title: "Nature Connection",
-      desc: "Guided forest walk and mindful silence practice. Spend time with yourself in nature’s embrace.",
-      icon: <Heart className="w-6 h-6 text-white" />,
-      color: "from-pink-400 to-rose-500",
-    },
-    {
-      day: "Day 4",
-      title: "Reflection & Rebirth",
-      desc: "Morning sound bath and sharing circle. Journaling for clarity and envisioning new paths ahead.",
-      icon: <Coffee className="w-6 h-6 text-white" />,
-      color: "from-purple-400 to-fuchsia-500",
-    },
-    {
-      day: "Day 5",
-      title: "Departure with Gratitude",
-      desc: "Final sunrise meditation followed by closing gratitude ritual and healthy breakfast before departure.",
-      icon: <Sunrise className="w-6 h-6 text-white" />,
-      color: "from-orange-400 to-amber-500",
-    },
-  ];
+  {
+    day: "Day 1",
+    title: "Arrival & Leisure",
+    desc: "Arrive at Mahé, transfer to hotel. Rest, relax, or explore nearby beaches at your own pace.",
+    icon: <Leaf className="w-6 h-6 text-white" />, // calm & fresh start
+    color: "from-sky-400 to-blue-500",
+  },
+  {
+    day: "Day 2",
+    title: "Mahé Island Tour",
+    desc: "Explore Bel Ombre, Beau Vallon, colonial landmarks, Venn's Town, and Sauzier Waterfall. Enjoy a Creole lunch en route.",
+    icon: <Mountain className="w-6 h-6 text-white" />, // for exploring landscapes
+    color: "from-emerald-400 to-teal-500",
+  },
+  {
+    day: "Day 3",
+    title: "Praslin & La Digue",
+    desc: "Visit Praslin’s Vallée de Mai and Anse Lazio, then ferry to La Digue for cycling, pristine beaches, and giant tortoises.",
+    icon: <Heart className="w-6 h-6 text-white" />, // romantic + scenic vibe
+    color: "from-pink-400 to-rose-500",
+  },
+  {
+    day: "Day 4",
+    title: "Victoria City & Departure",
+    desc: "Shop in Victoria markets, enjoy the local atmosphere, and transfer to the airport for departure.",
+    icon: <Coffee className="w-6 h-6 text-white" />, // relaxed farewell
+    color: "from-orange-400 to-amber-500",
+  },
+];
 
   return (
     <section className="relative bg-gradient-to-b from-sky-50 via-white to-emerald-50 py-16 md:py-28 overflow-hidden">
