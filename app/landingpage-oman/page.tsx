@@ -26,12 +26,11 @@ export default function LandingPage() {
       <AtAGlance />
       <ItineraryHorizontalComponent />
       <BlogGuides />
+      <RetreatPricingSection />
       <Testimonial />
       <ImageShowcase />
-      <RetreatPricingSection />
-
-      <ContactCTASectionLanding />
       <FAQ />
+      <ContactCTASectionLanding />
       <SiteFooter />
     </div>
   );
