@@ -30,7 +30,7 @@ export default function ItinerarySection() {
     },
     {
       imageLink:
-        "https://images.unsplash.com/photo-1432462770865-65b70566d673?auto=format&fit=crop&w=1950&q=80",
+        "https://travelsense.asia/wp-content/uploads/2015/12/Loy-Krathong-festival.jpg",
     },
     {
       imageLink:

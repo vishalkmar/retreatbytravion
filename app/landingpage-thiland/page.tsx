@@ -8,6 +8,8 @@ import ThailandItinerary from "@/components/thailand-landing/Itinerary";
 import AboutThailand from "@/components/thailand-landing/AboutUs";
 import ThailandBlogs from "@/components/thailand-landing/Blogs";
 import ThailandAccomodation from "@/components/thailand-landing/Accomodation";
+
+import ThailandVenuesGallery from "@/components/thailand-landing/ThailandVenues";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -15,6 +17,7 @@ export default function LandingPage() {
       <HeroLanding />
       <AboutThailand/>
       <ThailandAccomodation/>
+      <ThailandVenuesGallery/>
       <ThailandItinerary/>
       <ThailandBlogs/>
       <RetreatPricingSection />

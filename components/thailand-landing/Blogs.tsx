@@ -39,7 +39,7 @@ export default function ThailandBlogs() {
         "A serene blend of history and nature — explore the northern charm of Thailand’s cultural heart.",
       tag: "Adventure",
       image:
-        "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1000&auto=format&fit=crop",
+          "/thailand/blogs/b4.jpg",
     },
   ];
 
