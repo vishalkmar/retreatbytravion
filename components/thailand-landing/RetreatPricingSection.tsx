@@ -1,168 +1,163 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
+import Image from "next/image";
 
-const RetreatPricingSection = () => {
+export default function ItinerarySection() {
   const inclusions = [
-    "3 Nights Stay",
-    "All Vegetarian Meals",
-    "Daily Yoga & Meditation",
-    "Sound Healing Sessions",
-    "Relaxation Therapies",
-    "Group Ceremonies",
+    "Flights, Hotel, and All Transfers",
+    "Daily breakfast at the hotel",
+    "Full-day Pattaya tour (Nong Nooch Botanical Garden, Big Buddha & Viewpoint) with Indian lunch",
+    "Coral Island day tour by speedboat with Indian lunch",
+    "Tiger Park Pattaya entry",
+    "Safari World & Marine Park tour with lunch",
+    "Bangkok city tour covering Golden Buddha & Marble Temple",
   ];
 
   const exclusions = [
-    "Personal Therapies",
-    "Flights",
-    "Additional Personal Expenses",
+    "Personal expenses: minibar, beverages, room service, laundry, phone calls, porterage, tips",
+    "Early check-in / late check-out charges (Standard: Check-in 2 PM, Check-out 12 PM)",
+    "Items not listed under Package Inclusions",
+    "Meals/services not specified in itinerary",
+    "GST @5%; TCS – 5% for travel under ₹7L/year, 20% for over ₹10L/year",
+  ];
+
+  const QuadGallery = [
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1432462770865-65b70566d673?auto=format&fit=crop&w=1950&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=2560&q=80",
+    },
+    {
+      imageLink:
+        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2940&q=80",
+    },
   ];
 
   return (
-    <section className="relative overflow-hidden py-24 px-6 md:px-12 bg-gradient-to-b from-gray-50 via-white to-gray-100">
-      {/* Background accents */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-teal-300/30 blur-[120px] rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300/30 blur-[140px] rounded-full"></div>
+    <section className="relative overflow-hidden py-16 px-6 md:px-10 lg:px-12 bg-gradient-to-br from-[#f3fbff] via-[#ecf7f9] to-[#f6fcff]">
+      {/* soft gradient blobs */}
+      <div className="absolute top-[-60px] left-10 w-72 h-72 bg-[#b8e1ef]/40 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-[-80px] right-10 w-96 h-96 bg-[#d6f4fa]/40 blur-[150px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-8"
-        >
-          Your <span className="text-teal-600">Seychelles Retreat Package</span>
-        </motion.h2>
+      <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-stretch justify-between gap-10 lg:gap-16">
+        {/* LEFT SIDE */}
+        <div className="flex-1 flex flex-col justify-between h-full">
+          <motion.h2
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-5xl font-bold text-[#12394a] mb-3 text-center lg:text-left"
+          >
+            Thailand <span className="text-[#00a3af]">Retreat Experience</span>
+          </motion.h2>
 
-        {/* <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-16"
-        >
-          Experience the calm and rejuvenation of Seychelles — a retreat designed
-          to restore your body, mind, and spirit.
-        </motion.p> */}
+          <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed text-center lg:text-left max-w-lg">
+            Discover serene beaches, lush islands, and the charm of Thai culture
+            — a perfect balance of peace and adventure.
+          </p>
 
+          {/* PRICE */}
+          <div className="mb-8 text-center lg:text-left">
+            <h3 className="text-4xl md:text-5xl font-extrabold text-[#009ea3] drop-shadow-sm">
+              ₹44,999
+            </h3>
+            <p className="text-[#64c3ce] font-medium mt-1">
+              per person (all inclusive)
+            </p>
+          </div>
+
+          {/* CARDS */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
+            {/* INCLUDED */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white/70 backdrop-blur-lg rounded-2xl p-5 border border-white/40 shadow-sm flex flex-col justify-between"
+            >
+              <h3 className="text-xl font-semibold text-[#009ea3] mb-4 flex items-center gap-2">
+                <CheckCircle2 className="text-[#00b3b3]" />
+                Included
+              </h3>
+              <ul className="space-y-2 text-gray-700 text-sm md:text-base leading-snug">
+                {inclusions.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 hover:translate-x-1 transition-transform"
+                  >
+                    <span className="w-2 h-2 mt-2 bg-[#00a3af] rounded-full"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* EXCLUDED */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white/70 backdrop-blur-lg rounded-2xl p-5 border border-white/40 shadow-sm flex flex-col justify-between"
+            >
+              <h3 className="text-xl font-semibold text-[#ff6f6f] mb-4 flex items-center gap-2">
+                <XCircle className="text-[#ff6f6f]" />
+                Not Included
+              </h3>
+              <ul className="space-y-2 text-gray-700 text-sm md:text-base leading-snug">
+                {exclusions.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 hover:translate-x-1 transition-transform"
+                  >
+                    <span className="w-2 h-2 mt-2 bg-[#ff6f6f] rounded-full"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE - QUAD GALLERY */}
        <motion.div
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3, duration: 0.6 }}
-  className="relative my-16 mx-auto max-w-2xl text-center text-white rounded-[2rem] shadow-2xl overflow-hidden"
+  initial={{ opacity: 0, x: 40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  className="flex-1 relative flex justify-center items-center"
 >
-  {/* Gradient background */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#0096c7] via-[#00b4d8] to-[#48cae4]"></div>
-
-  {/* Decorative wavy bottom border */}
-  <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-    <svg
-      className="relative block w-full h-[40px]"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1200 120"
-      preserveAspectRatio="none"
-    >
-      <path
-        d="M321.39,56.44C234.25,34,117.12,12,0,0V120H1200V0C1036.91,27.22,871.65,53.11,721.39,71.44,541.09,93,401.48,79.93,321.39,56.44Z"
-        fill="#ffffff22"
-      ></path>
-    </svg>
+  <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-7 w-full max-w-2xl">
+    {QuadGallery.map(({ imageLink }, index) => (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: index * 0.1 }}
+        className="relative aspect-[1/1.3] sm:aspect-[4/2.8]"
+      >
+        <Image
+          src={imageLink}
+          alt={`Gallery ${index + 1}`}
+          fill
+          className="rounded-2xl object-cover shadow-lg hover:scale-[1.05] transition-transform duration-500"
+        />
+      </motion.div>
+    ))}
   </div>
 
-  {/* Content */}
-  <div className="relative z-10 py-6 px-8">
-    <h3 className="text-4xl font-extrabold mb-2 drop-shadow-lg">₹39,999</h3>
-    <p className="text-white/90 text-sm md:text-base mb-4 truncate">
-      Full access to your transformative Seychelles retreat — stay, meals, sessions & more.
-    </p>
-    <a
-      href="#"
-      className="inline-block bg-white text-[#007f91] font-semibold px-7 py-2 rounded-full shadow-md hover:bg-gray-100 transition-transform hover:scale-105"
-    >
-      Reserve Your Spot
-    </a>
-  </div>
+  {/* glow */}
+  <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-80 h-36 bg-[#93e2f0]/30 blur-3xl rounded-full"></div>
 </motion.div>
-
-
-        {/* Card Layout */}
-        <div className="grid md:grid-cols-2 gap-10 items-stretch">
-  {/* Included */}
-  <motion.div
-    initial={{ opacity: 0, x: -30 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.6 }}
-    className="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300 flex items-center justify-center text-center"
-  >
-    {/* Decorative shapes */}
-    <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-      <div className="absolute top-0 left-0 w-0 h-0 border-t-[130px] border-r-[220px] border-t-teal-500 border-r-transparent"></div>
-      <div className="absolute bottom-0 right-0 w-0 h-0 border-b-[130px] border-l-[220px] border-b-sky-400 border-l-transparent"></div>
-    </div>
-
-    <div className="relative z-10 p-10 flex flex-col items-center justify-center">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-        <CheckCircle className="text-teal-600 w-6 h-6" />
-        What’s Included
-      </h3>
-      <ul className="space-y-3 text-left">
-        {inclusions.map((item, i) => (
-          <motion.li
-            key={i}
-            whileHover={{ scale: 1.03, x: 5 }}
-            className="flex items-center gap-3 text-gray-700 font-medium"
-          >
-            <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
-            {item}
-          </motion.li>
-        ))}
-      </ul>
-    </div>
-  </motion.div>
-
-  {/* Excluded */}
-  <motion.div
-    initial={{ opacity: 0, x: 30 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.6 }}
-    className="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300 flex items-center justify-center text-center"
-  >
-    {/* Decorative shapes */}
-    <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-      <div className="absolute top-0 left-0 w-0 h-0 border-t-[130px] border-r-[220px] border-t-gray-900 border-r-transparent"></div>
-      <div className="absolute bottom-0 right-0 w-0 h-0 border-b-[130px] border-l-[220px] border-b-sky-500 border-l-transparent"></div>
-    </div>
-
-    <div className="relative z-10 p-10 flex flex-col items-center justify-center">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-        <XCircle className="text-red-500 w-6 h-6" />
-        What’s Not Included
-      </h3>
-      <ul className="space-y-3 text-left">
-        {exclusions.map((item, i) => (
-          <motion.li
-            key={i}
-            whileHover={{ scale: 1.03, x: 5 }}
-            className="flex items-center gap-3 text-gray-700 font-medium"
-          >
-            <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-            {item}
-          </motion.li>
-        ))}
-      </ul>
-    </div>
-  </motion.div>
-</div>
-
-      
-        
-
 
       </div>
     </section>
   );
-};
-
-export default RetreatPricingSection;
+}
