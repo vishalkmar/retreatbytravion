@@ -23,6 +23,7 @@
         "name": "next"
       }
     ],
+       "typeRoots": ["./types", "./node_modules/@types"],
     "paths": {
       "@/*": [
         "./*"
