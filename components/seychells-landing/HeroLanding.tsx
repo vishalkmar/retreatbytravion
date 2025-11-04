@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { ChevronDown } from "lucide-react";
 
-// Dynamically import WaterWave to avoid SSR issues
+// @ts-ignore
 const WaterWave = dynamic(() => import("react-water-wave"), { ssr: false });
 
 export default function HeroLanding() {
