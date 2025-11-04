@@ -1,125 +1,164 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+import { Moon, Utensils, Anchor } from "lucide-react";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { Leaf, Coffee, Sunrise, Heart, Mountain } from "lucide-react";
-
-const ItineraryLandingV2 = () => {
-  const days = [
-  {
-    day: "Day 1",
-    title: "Arrival & Leisure",
-    desc: "Arrive at Mahé, transfer to hotel. Rest, relax, or explore nearby beaches at your own pace.",
-    icon: <Leaf className="w-6 h-6 text-white" />, // calm & fresh start
-    color: "from-sky-400 to-blue-500",
-  },
-  {
-    day: "Day 2",
-    title: "Mahé Island Tour",
-    desc: "Explore Bel Ombre, Beau Vallon, colonial landmarks, Venn's Town, and Sauzier Waterfall. Enjoy a Creole lunch en route.",
-    icon: <Mountain className="w-6 h-6 text-white" />, // for exploring landscapes
-    color: "from-emerald-400 to-teal-500",
-  },
-  {
-    day: "Day 3",
-    title: "Praslin & La Digue",
-    desc: "Visit Praslin’s Vallée de Mai and Anse Lazio, then ferry to La Digue for cycling, pristine beaches, and giant tortoises.",
-    icon: <Heart className="w-6 h-6 text-white" />, // romantic + scenic vibe
-    color: "from-pink-400 to-rose-500",
-  },
-  {
-    day: "Day 4",
-    title: "Victoria City & Departure",
-    desc: "Shop in Victoria markets, enjoy the local atmosphere, and transfer to the airport for departure.",
-    icon: <Coffee className="w-6 h-6 text-white" />, // relaxed farewell
-    color: "from-orange-400 to-amber-500",
-  },
-];
-
+export default function SeychellesItinerary() {
   return (
-    <section className="relative bg-gradient-to-b from-sky-50 via-white to-emerald-50 py-16 md:py-28 overflow-hidden">
-      {/* Top Banner */}
-      <div className="relative mb-16 md:mb-24">
+    <div className="relative min-h-screen bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden">
+      {/* ===== PAGE HEADING ===== */}
+      <div className="text-center pt-16 pb-8">
+        <h1
+          className="text-6xl md:text-7xl font-bold tracking-wide mb-4 text-white drop-shadow-md"
+          style={{ fontFamily: "cursive" }}
+        >
+          Seychelles Itinerary
+        </h1>
+        <p className="text-teal-200 text-lg md:text-xl max-w-2xl mx-auto">
+          A journey through pristine islands, coral lagoons, and unforgettable island experiences.
+        </p>
+      </div>
+
+      {/* ===== Header Image ===== */}
+      <div className="relative w-full h-[500px] mt-8 rounded-b-[100px] overflow-hidden shadow-xl border-t border-teal-700/40">
         <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80"
-          alt="Retreat Banner"
-          className="w-full h-[280px] md:h-[400px] object-cover rounded-b-[40px] shadow-md"
+          src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Seychelles"
+          className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-white/60 rounded-b-[40px]" />
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-semibold drop-shadow-lg">
-            5-Day Rejuvenation Retreat
+
+        {/* Logo Box */}
+        <div
+          className="absolute top-0 right-0 bg-teal-900/80 backdrop-blur-md px-12 py-8 flex flex-col items-center justify-center shadow-lg border-l border-b border-teal-700/40"
+          style={{
+            borderBottomLeftRadius: "120px",
+            minWidth: "280px",
+          }}
+        >
+          <h1
+            className="text-5xl font-bold mb-2 text-amber-400"
+            style={{ fontFamily: "cursive" }}
+          >
+            Exquisite
           </h1>
-          <p className="mt-3 text-lg opacity-90">
-            Flow through calm, clarity, and connection
+          <p className="text-teal-200 text-sm tracking-widest font-semibold">
+            TRAVEL & TOURS
           </p>
         </div>
       </div>
 
-      {/* Timeline */}
-      <div className="relative max-w-5xl mx-auto px-6">
-        {/* Connector Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-[3px] bg-gradient-to-b from-emerald-300 via-cyan-300 to-rose-300 rounded-full"></div>
+      {/* ===== Floating Title Card ===== */}
+      <div
+        className="absolute left-0 bg-teal-900/90 border border-teal-700/50 px-16 py-12 shadow-xl"
+        style={{
+          top: "380px",
+          borderTopRightRadius: "120px",
+          borderBottomRightRadius: "120px",
+          zIndex: 20,
+        }}
+      >
+        <h2 className="text-6xl font-bold mb-3 text-amber-400" style={{ fontFamily: "cursive" }}>
+          Seychelles
+        </h2>
+        <p className="text-teal-200 text-3xl font-light tracking-wide">
+          Package Tours
+        </p>
+      </div>
 
-        <div className="flex flex-col gap-16 relative z-10">
-          {days.map((d, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2, duration: 0.6 }}
-              className={`relative flex flex-col md:flex-row items-center ${
-                i % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Card */}
-              <div
-                className={`bg-white shadow-lg rounded-2xl p-8 md:w-[48%] z-10 border border-gray-100 relative ${
-                  i % 2 === 0
-                    ? "md:ml-8 md:text-left text-center"
-                    : "md:mr-8 md:text-right text-center"
-                }`}
-              >
-                <div
-                  className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r ${d.color} text-white shadow-md absolute ${
-                    i % 2 === 0
-                      ? "md:-left-6 md:top-6 left-1/2 -translate-x-1/2 -top-8"
-                      : "md:-right-6 md:top-6 right-1/2 translate-x-1/2 -top-8"
-                  }`}
-                >
-                  {d.icon}
-                </div>
+      {/* ===== MAIN CONTENT ===== */}
+      <div className="relative z-10 container mx-auto px-8 pt-48 pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
+          {/* LEFT SIDE - ITINERARY CARDS */}
+          <div className="space-y-10">
+            {/* About */}
+            <div className="bg-teal-900/60 border border-teal-700/50 rounded-3xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-emerald-400 mb-2">
+                About This Experience
+              </h3>
+              <p className="text-teal-100 text-lg leading-relaxed">
+                4 days of island-hopping in Seychelles with guided Mahé, Praslin,
+                and La Digue tours, flights included.
+              </p>
+            </div>
 
-                <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
-                  {d.day}: {d.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">{d.desc}</p>
+            {/* Daily Schedule */}
+            <div>
+              <h3 className="text-3xl font-semibold text-white mb-6 drop-shadow-md">
+                Daily Schedule
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {[
+                  {
+                    day: "Day 1",
+                    title: "Arrival & Leisure",
+                    desc: "Arrive Mahé, transfer to hotel, rest or explore.",
+                  },
+                  {
+                    day: "Day 2",
+                    title: "Mahé Island Tour",
+                    desc: "Bel Ombre, Beau Vallon, colonial landmarks, Venn's Town, Sauzier Waterfall, Creole lunch.",
+                  },
+                  {
+                    day: "Day 3",
+                    title: "Praslin & La Digue",
+                    desc: "Coco de Mer, Anse Lazio, La Digue cycling, beaches, giant tortoises.",
+                  },
+                  {
+                    day: "Day 4",
+                    title: "Victoria City & Departure",
+                    desc: "Shopping in Victoria markets, airport transfer.",
+                  },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-teal-900/60 shadow-md rounded-3xl p-6 border border-teal-700/50 hover:shadow-xl hover:-translate-y-1 transition-all"
+                  >
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-amber-400 text-teal-900 rounded-full flex items-center justify-center text-lg font-bold shadow-md">
+                        {item.day.split(" ")[1]}
+                      </div>
+                      <div>
+                        <h4 className="text-emerald-400 font-semibold text-xl mb-1">
+                          {item.title}
+                        </h4>
+                        <p className="text-teal-100 text-sm leading-relaxed">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
+            </div>
+          </div>
 
-              {/* Connector Dots */}
-              <div className="hidden md:flex flex-col items-center justify-center w-6">
-                <div className="w-4 h-4 bg-gradient-to-r from-emerald-300 to-cyan-300 rounded-full shadow-md"></div>
-                {i !== days.length - 1 && (
-                  <div className="flex-1 w-[2px] bg-gradient-to-b from-cyan-200 to-rose-200"></div>
-                )}
-              </div>
-            </motion.div>
-          ))}
+          {/* RIGHT SIDE - CIRCULAR BOX */}
+          <div
+            className="lg:absolute right-0 top-1/2 transform lg:-translate-y-1/2 flex justify-center items-center overflow-hidden shadow-2xl border border-teal-700/40"
+            style={{
+              backgroundColor: "rgba(13, 65, 60, 0.9)",
+              borderRadius: "50%",
+              width: "550px",
+              height: "550px",
+              clipPath: "circle(50% at 50% 50%)",
+            }}
+          >
+            <img
+              src="/seychelles/it.avif"
+              alt="Seychelles island"
+              className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+            />
+          </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="text-center mt-20">
-        <p className="text-gray-700 text-lg font-medium mb-4">
-          “Every step leads you closer to peace.”
-        </p>
-        <button className="bg-gradient-to-r from-emerald-400 to-cyan-400 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all">
-          View Full Experience
-        </button>
-      </div>
-    </section>
+      {/* Bottom Curve */}
+      <div
+        className="absolute bottom-0 left-0 bg-teal-900 -z-10"
+        style={{
+          width: "600px",
+          height: "300px",
+          borderTopRightRadius: "200px",
+        }}
+      />
+    </div>
   );
-};
-
-export default ItineraryLandingV2;
+}
