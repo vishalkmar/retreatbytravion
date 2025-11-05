@@ -61,9 +61,9 @@ export default function SeychellesShowcaseCarousel() {
           {/* 3 small images in a row */}
           <div className="flex gap-4 mt-6">
             {[
-              "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600",
-              "https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=600",
-              "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600",
+               "/seychelles/blog/b1.avif",
+              "/seychelles/blog/b2.avif",
+             "/seychelles/blog/b3.jpg",
             ].map((img, i) => (
               <div
                 key={i}
