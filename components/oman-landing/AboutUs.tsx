@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
+import { lato } from "@/lib/fonts";
 
 export default function AboutUs() {
   return (
-    <section className="py-20 bg-gradient-to-br from-amber-50 via-white to-amber-100">
+    <section className ={`${lato.variable} py-20 bg-gradient-to-br from-amber-50 via-white to-amber-100`}>
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">

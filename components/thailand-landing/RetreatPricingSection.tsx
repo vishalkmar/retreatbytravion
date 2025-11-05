@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, XCircle } from "lucide-react";
 import Image from "next/image";
+import { lato } from "@/lib/fonts";
+import { Button } from "@/components/ui/button"; // optional if you already use shadcn/ui, else use a <button>
 
 export default function ItinerarySection() {
   const inclusions = [
@@ -43,8 +45,10 @@ export default function ItinerarySection() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-16 px-6 md:px-10 lg:px-12 bg-gradient-to-br from-[#f3fbff] via-[#ecf7f9] to-[#f6fcff]">
-      {/* soft gradient blobs */}
+    <section
+      className={`${lato.className} relative overflow-hidden py-16 px-6 md:px-10 lg:px-12 bg-gradient-to-br from-[#f3fbff] via-[#ecf7f9] to-[#f6fcff]`}
+    >
+      {/* gradient blobs */}
       <div className="absolute top-[-60px] left-10 w-72 h-72 bg-[#b8e1ef]/40 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-[-80px] right-10 w-96 h-96 bg-[#d6f4fa]/40 blur-[150px] rounded-full"></div>
 
@@ -127,36 +131,47 @@ export default function ItinerarySection() {
           </div>
         </div>
 
-        {/* RIGHT SIDE - QUAD GALLERY */}
-       <motion.div
-  initial={{ opacity: 0, x: 40 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.6 }}
-  className="flex-1 relative flex justify-center items-center"
->
-  <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-7 w-full max-w-2xl">
-    {QuadGallery.map(({ imageLink }, index) => (
-      <motion.div
-        key={index}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: index * 0.1 }}
-        className="relative aspect-[1/1.3] sm:aspect-[4/2.8]"
-      >
-        <Image
-          src={imageLink}
-          alt={`Gallery ${index + 1}`}
-          fill
-          className="rounded-2xl object-cover shadow-lg hover:scale-[1.05] transition-transform duration-500"
-        />
-      </motion.div>
-    ))}
-  </div>
+        {/* RIGHT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex-1 relative flex flex-col justify-center items-center gap-8"
+        >
+          {/* Image Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-7 w-full max-w-2xl">
+            {QuadGallery.map(({ imageLink }, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="relative aspect-[1/1.3] sm:aspect-[4/2.8]"
+              >
+                <Image
+                  src={imageLink}
+                  alt={`Gallery ${index + 1}`}
+                  fill
+                  className="rounded-2xl object-cover shadow-lg hover:scale-[1.05] transition-transform duration-500"
+                />
+              </motion.div>
+            ))}
+          </div>
 
-  {/* glow */}
-  <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-80 h-36 bg-[#93e2f0]/30 blur-3xl rounded-full"></div>
-</motion.div>
+          {/* CTA Section */}
+          <div className="w-full max-w-md bg-gradient-to-r from-[#00b6b3] to-[#009ea3] rounded-2xl p-6 text-center text-white shadow-xl hover:scale-[1.02] transition-transform duration-300">
+            <h3 className="text-2xl font-semibold mb-2">Ready to Book?</h3>
+            <p className="text-white/90 mb-5 text-sm md:text-base">
+              Reserve your spot for the ultimate Thailand retreat experience!
+            </p>
+            <button className="bg-white text-[#009ea3] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#e6f9f9] transition-colors">
+              Book Now
+            </button>
+          </div>
 
+          {/* Glow under CTA */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 h-36 bg-[#93e2f0]/40 blur-3xl rounded-full"></div>
+        </motion.div>
       </div>
     </section>
   );

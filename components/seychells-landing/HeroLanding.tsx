@@ -2,12 +2,15 @@
 
 import dynamic from "next/dynamic";
 import { ChevronDown } from "lucide-react";
+import { lato } from "@/lib/fonts"; // ✅ Import Lato font
 
 const WaterWave = dynamic(() => import("react-water-wave"), { ssr: false });
 
 export default function HeroLanding() {
   return (
-    <section className="relative mt-[80px]  h-screen w-full overflow-hidden">
+    <section
+      className={`${lato.className} relative mt-[80px] h-screen w-full overflow-hidden`}
+    >
       {/* Water ripple background */}
       <WaterWave
         imageUrl="/seychelles/banner.jpg"
@@ -25,7 +28,7 @@ export default function HeroLanding() {
       >
         {() => (
           <div className="relative flex flex-col items-center justify-center h-screen text-center text-white px-6 overflow-hidden">
-            {/* Gradient overlay to improve text contrast */}
+            {/* Gradient overlay for better text contrast */}
             <div className="absolute inset-0 bg-gradient-to-b from-teal-900/70 via-cyan-800/50 to-emerald-900/80"></div>
 
             {/* Hero Content */}

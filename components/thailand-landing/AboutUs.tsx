@@ -1,15 +1,20 @@
 "use client";
 import React from "react";
+import { lato } from "@/lib/fonts"; // <-- import your Lato font
 
 export default function AboutThailand() {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-[#e0f7fa] via-white to-[#caf0f8] overflow-hidden">
+    <section
+      className={`${lato.variable} relative py-24 bg-gradient-to-br from-[#e0f7fa] via-white to-[#caf0f8] overflow-hidden font-[var(--font-lato)]`}
+    >
       {/* Decorative soft gradient blobs */}
       <div className="absolute top-20 left-[-100px] w-96 h-96 bg-[#00b4d8]/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-[-120px] w-[420px] h-[420px] bg-[#0096c7]/20 rounded-full blur-3xl"></div>
-         <p className="uppercase text-center text-5xl tracking-widest text-[#00b4d8] font-semibold my-[50px]">
-            About Us
-          </p>
+
+      <p className="uppercase text-center text-5xl tracking-widest text-[#00b4d8] font-semibold my-[50px]">
+        About Us
+      </p>
+
       {/* Two-column layout */}
       <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-40 items-center">
         {/* Left side - Image composition */}
@@ -31,13 +36,10 @@ export default function AboutThailand() {
               className="w-full h-full object-cover"
             />
           </div>
-
-          {/* Floating tag */}
-         
         </div>
 
         {/* Right side - Text content */}
-        <div className="max-w-xl text-left">
+        <div className="max-w-xl text-left font-[var(--font-lato)]">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#023e8a] leading-tight mb-6">
             We are Professional <br /> Planners For your{" "}
             <span className="text-[#00b4d8]">Thailand Trip</span>
@@ -62,7 +64,10 @@ export default function AboutThailand() {
               "Award-winning travel experts",
               "Trusted by over 80,000 travelers worldwide",
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-gray-800">
+              <li
+                key={i}
+                className="flex items-start gap-3 text-gray-800 font-[var(--font-lato)]"
+              >
                 <span className="mt-1 w-5 h-5 rounded-full bg-[#00b4d8] flex items-center justify-center text-white text-xs">
                   ✓
                 </span>
@@ -71,13 +76,11 @@ export default function AboutThailand() {
             ))}
           </ul>
 
-          <button className="px-8 py-3 bg-[#00b4d8] text-white rounded-full font-semibold shadow-md hover:bg-[#0096c7] hover:shadow-lg transition-all duration-300">
+          <button className="px-8 py-3 bg-[#00b4d8] text-white rounded-full font-semibold shadow-md hover:bg-[#0096c7] hover:shadow-lg transition-all duration-300 font-[var(--font-lato)]">
             Read More →
           </button>
         </div>
       </div>
-
-     
     </section>
   );
 }

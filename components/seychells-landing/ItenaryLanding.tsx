@@ -1,5 +1,7 @@
 "use client";
+
 import React from "react";
+import { lato } from "@/lib/fonts";
 
 const itineraryData = [
   {
@@ -66,25 +68,33 @@ const itineraryData = [
 
 const SeychellesItinerary = () => {
   return (
-    <section className="bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 text-white overflow-hidden">
+    <section
+      className={`${lato.className} bg-white overflow-hidden text-gray-700 relative`}
+    >
+      {/* subtle top gradient hint (like sunlight reflection on white) */}
+      <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-emerald-50 via-white to-transparent pointer-events-none"></div>
+
       {/* ---------- HEADER SECTION ---------- */}
-      <div className="w-full text-center py-20 px-4">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-400 mb-4">
+      <div className="w-full text-center py-20 px-4 relative z-10">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-4">
           SEYCHELLES RETREAT ITINERARY
         </h1>
-        <p className="text-gray-200 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
           A 6-day transformational journey designed to help you unwind, reconnect,
           and embrace the natural beauty of Seychelles — where the ocean meets serenity.
         </p>
       </div>
 
       {/* ---------- ITINERARY SECTION ---------- */}
-      <div className="py-16 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto">
+      <div className="py-16 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 text-center">
           {itineraryData.map((day, index) => (
-            <div key={index} className="flex flex-col items-center relative">
+            <div
+              key={index}
+              className="flex flex-col items-center relative hover:scale-[1.02] transition-transform duration-300"
+            >
               <div className="relative mb-12 flex flex-col items-center">
-                {/* White Curved Cap Outside Circle */}
+                {/* Curved Cap with color tone */}
                 <div className="absolute -top-12 left-1/2 -translate-x-1/2 z-10">
                   <svg
                     width="200"
@@ -95,35 +105,35 @@ const SeychellesItinerary = () => {
                     <path
                       d="M10,70 Q100,0 190,70"
                       fill="none"
-                      stroke="white"
+                      stroke="#a7f3d0"
                       strokeWidth="10"
                       strokeLinecap="round"
                     />
                   </svg>
                   <div className="absolute inset-0 flex justify-center items-start pt-6">
-                    <span className="text-white font-bold text-base bg-emerald-400 px-3 py-1 rounded-full shadow">
+                    <span className="text-white font-semibold text-sm bg-gradient-to-r from-emerald-500 to-teal-400 px-4 py-1.5 rounded-full shadow-lg border border-white/30">
                       Day {day.day}
                     </span>
                   </div>
                 </div>
 
                 {/* Circle Image */}
-                <div className="w-52 h-52 sm:w-56 sm:h-56 md:w-60 md:h-60 rounded-full overflow-hidden border-[3px] border-white shadow-lg relative z-0">
+                <div className="w-52 h-52 sm:w-56 sm:h-56 md:w-60 md:h-60 rounded-full overflow-hidden border-[4px] border-emerald-100 shadow-md relative z-0">
                   <img
                     src={day.image}
                     alt={day.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold uppercase mb-4 text-emerald-400 tracking-wide">
+              <h3 className="text-xl font-semibold uppercase mb-4 text-emerald-600 tracking-wide">
                 {day.title}
               </h3>
 
               {/* Details */}
-              <ul className="text-base text-gray-200 space-y-2 leading-relaxed max-w-xs">
+              <ul className="text-base text-gray-600 space-y-2 leading-relaxed max-w-xs">
                 {day.details.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -132,6 +142,9 @@ const SeychellesItinerary = () => {
           ))}
         </div>
       </div>
+
+      {/* Bottom soft gradient touch */}
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-teal-50 via-white to-transparent pointer-events-none"></div>
     </section>
   );
 };

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { lato } from "@/lib/fonts"; 
 
 const places = [
   {
@@ -40,30 +41,32 @@ export default function SeychellesShowcaseCarousel() {
   const nextSlide = () => setCurrent((prev) => (prev + 1) % places.length);
 
   return (
-    <section className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 py-24 px-6 md:px-16 overflow-hidden text-white">
-      {/* Glows */}
-      
+    <section
+      className={`relative bg-white py-24 px-6 md:px-16 overflow-hidden text-white ${lato.className}`}
+    >
+      {/* Background Glows */}
       <div className="absolute top-20 right-0 w-[450px] h-[450px] bg-teal-500/20 rounded-full blur-[120px]" />
       <div className="absolute bottom-10 left-0 w-[300px] h-[300px] bg-emerald-500/20 rounded-full blur-[100px]" />
-         
-      <div className="relative z-10 grid lg:grid-cols-2 items-center gap-14 max-w-7xl mx-auto">
+
+      {/* Main Grid */}
+      <div className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 z-10 grid lg:grid-cols-2 items-center gap-14 max-w-7xl mx-auto rounded-[24px] p-8 shadow-2xl border border-teal-700/40">
         {/* LEFT — Content */}
         <div className="relative space-y-8">
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight text-white">
+          <h2 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
             Discover <span className="text-emerald-400">Seychelles Blogs</span>
           </h2>
 
-          <p className="text-teal-100 text-lg leading-relaxed max-w-lg">
+          <p className="text-teal-100 text-lg leading-relaxed max-w-lg font-light">
             Where emerald waters kiss white sands — Seychelles awaits with its
             pristine beaches, island charm, and tropical serenity.
           </p>
 
-          {/* 3 small images in a row */}
+          {/* 3 small images */}
           <div className="flex gap-4 mt-6">
             {[
-               "/seychelles/blog/b1.avif",
+              "/seychelles/blog/b1.avif",
               "/seychelles/blog/b2.avif",
-             "/seychelles/blog/b3.jpg",
+              "/seychelles/blog/b3.jpg",
             ].map((img, i) => (
               <div
                 key={i}
@@ -90,13 +93,7 @@ export default function SeychellesShowcaseCarousel() {
                     i === current ? "opacity-100" : "opacity-0"
                   }`}
                 >
-                  <Image
-                    src={p.img}
-                    alt={p.title}
-                    fill
-                    className="object-cover"
-                    priority={i === 0}
-                  />
+                  <Image src={p.img} alt={p.title} fill className="object-cover" priority={i === 0} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   <div className="absolute bottom-8 left-8 text-white drop-shadow-lg">
                     <h3 className="text-2xl font-semibold">{p.title}</h3>

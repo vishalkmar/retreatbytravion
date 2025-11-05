@@ -8,11 +8,11 @@ const CTASectionLanding = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="w-full bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 py-16 md:py-20 flex justify-center relative overflow-hidden px-4 sm:px-6">
+    <section className="w-full  py-16 md:py-20 flex justify-center relative overflow-hidden px-4 sm:px-6">
       {/* Subtle glow overlay */}
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[1px]"></div>
 
-      <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-[20px] py-10 sm:py-12 px-6 sm:px-10 text-center shadow-[0_10px_40px_rgba(0,0,0,0.2)] w-full max-w-[1300px]">
+      <div className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 backdrop-blur-md border border-white/20 rounded-[20px] py-10 sm:py-12 px-6 sm:px-10 text-center shadow-[0_10px_40px_rgba(0,0,0,0.2)] w-full max-w-[1300px]">
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-wide drop-shadow-md leading-snug">
           Ready to Discover Paradise in Seychelles?

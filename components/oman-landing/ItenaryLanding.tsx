@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-
+import { lato } from "@/lib/fonts";
 const itinerary = [
   {
     day: 1,
@@ -50,7 +50,7 @@ const itinerary = [
 export default function DynamicOmanItinerary() {
   return (
     <section
-      className="relative text-white overflow-hidden py-24 px-6 md:px-12"
+     className={`${lato.variable} relative text-white overflow-hidden py-24 px-6 md:px-12`}
       style={{
         backgroundImage: `url('/oman-bg.jpg')`,
         backgroundSize: "cover",

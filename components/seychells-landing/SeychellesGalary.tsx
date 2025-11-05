@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { lato } from "@/lib/fonts"; // ✅ Importing Lato font
 
 export default function SeychellesGallery() {
   const topImages = [
@@ -17,7 +18,9 @@ export default function SeychellesGallery() {
   ];
 
   return (
-    <section className="relative flex items-center justify-center py-20 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden">
+    <section
+      className={`${lato.className} relative flex items-center justify-center py-20 overflow-hidden`} // ✅ Apply font here
+    >
       {/* Background texture */}
       <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]"></div>
 
@@ -44,10 +47,10 @@ export default function SeychellesGallery() {
         </div>
 
         {/* Center Text */}
-        <div className="flex flex-col items-center justify-center h-[12%] bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900">
-          <h2 className="text-3xl md:text-6xl font-bold tracking-wide drop-shadow-lg leading-tight">
-            At a Glance to Seychelles
-          </h2>
+        <div className="flex flex-col items-center justify-center h-[12%] ">
+          <h2 className="text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
+        Seychelles Galary
+  </h2>
         </div>
 
         {/* Bottom 3 Images */}
@@ -65,8 +68,6 @@ export default function SeychellesGallery() {
           ))}
         </div>
       </div>
-
-     
     </section>
   );
 }

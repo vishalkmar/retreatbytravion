@@ -1,6 +1,6 @@
 "use client";
 import desertimage from "../../public/oman/desert.jpg";
-
+import { lato } from "@/lib/fonts";
 import Image from "next/image";
 
 export default function BlogGuides() {
@@ -35,7 +35,7 @@ export default function BlogGuides() {
   ];
 
   return (
-    <div className="min-h-screen bg-amber-50 px-8 py-16">
+    <div className={`${lato.variable} min-h-screen bg-amber-50 px-8 py-16`}>
       {/* Header Section */}
       <div className="max-w-7xl mx-auto mb-12">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">

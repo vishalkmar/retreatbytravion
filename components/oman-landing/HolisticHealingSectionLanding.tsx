@@ -4,6 +4,7 @@ import React from "react";
 import { Users, Heart, Sprout, Brain } from "lucide-react";
 import { useState } from "react";
  import RetreatInquiryForm from "@/components/retreatForm/RetreatInquiryForm";
+ import { lato } from "@/lib/fonts";
 const HolisticHealingSectionLanding = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +45,8 @@ const HolisticHealingSectionLanding = () => {
   ];
 
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+   <section className={`${lato.variable} bg-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden`}>
+
       {/* Decorative background circles */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-green-100 rounded-full opacity-30 blur-2xl"></div>
       <div className="absolute bottom-10 right-10 w-40 h-40 bg-teal-100 rounded-full opacity-30 blur-2xl"></div>

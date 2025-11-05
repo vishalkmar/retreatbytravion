@@ -1,8 +1,8 @@
 import { ChevronDown } from "lucide-react";
-
+import { lato } from "@/lib/fonts";
 function HeroLanding() {
   return (
-    <section className="relative mt-[80px] h-screen w-full overflow-hidden">
+    <section className={`${lato.variable} relative mt-[80px] h-screen w-full overflow-hidden`}>
       {/* Background Image */}
       <div
         className="absolute inset-0"

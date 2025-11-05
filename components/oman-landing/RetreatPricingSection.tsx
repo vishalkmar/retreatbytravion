@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, XCircle } from "lucide-react";
+import { lato } from "@/lib/fonts";
 
 const RetreatPricingSection = () => {
   const inclusions = [
@@ -22,7 +23,7 @@ const RetreatPricingSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-24 px-6 md:px-12 bg-gradient-to-b from-emerald-50 via-white to-teal-50">
+   <section className={`${lato.variable} relative overflow-hidden py-24 px-6 md:px-12 bg-gradient-to-b from-emerald-50 via-white to-teal-50`}>
       {/* Floating blurred backgrounds */}
       <div className="absolute top-20 left-20 w-80 h-80 bg-emerald-200 opacity-30 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-300 opacity-25 blur-[150px] rounded-full"></div>

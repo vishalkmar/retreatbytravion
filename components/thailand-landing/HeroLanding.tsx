@@ -1,14 +1,17 @@
 import { ChevronDown } from "lucide-react";
+import { lato } from "@/lib/fonts";
 
 function HeroLanding() {
   return (
-    <section className="relative mt-[80px] h-screen w-full overflow-hidden">
+    <section
+      className={`${lato.className} relative mt-[80px] h-screen w-full overflow-hidden`}
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074")', // Thailand beach or temple
+            'url("https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -27,8 +30,8 @@ function HeroLanding() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mb-12 text-blue-100 font-light leading-relaxed">
-          Explore golden temples, turquoise beaches, and the vibrant heart of Thai culture — 
-          where every sunrise tells a story.
+          Explore golden temples, turquoise beaches, and the vibrant heart of
+          Thai culture — where every sunrise tells a story.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-20">

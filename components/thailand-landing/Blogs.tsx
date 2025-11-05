@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { lato } from "@/lib/fonts";
 
 export default function ThailandBlogs() {
   const blogs = [
@@ -11,8 +11,7 @@ export default function ThailandBlogs() {
       description:
         "Experience the colorful chaos of Thailand’s floating bazaars — food, crafts, and culture on water.",
       tag: "Travel Guide",
-      image:
-        "/thailand/blogs/b1.jpg",
+      image: "/thailand/blogs/b1.jpg",
     },
     {
       id: 2,
@@ -20,8 +19,7 @@ export default function ThailandBlogs() {
       description:
         "White sands, blue waters, and tropical sunsets — explore paradise beyond Phuket and Krabi.",
       tag: "Destination",
-      image:
-       "/thailand/blogs/b2.jpg",
+      image: "/thailand/blogs/b2.jpg",
     },
     {
       id: 3,
@@ -29,8 +27,7 @@ export default function ThailandBlogs() {
       description:
         "From spicy Pad Thai to mango sticky rice — a flavorful journey through Thailand’s famous night markets.",
       tag: "Food & Culture",
-      image:
-        "/thailand/blogs/b3.jpg",
+      image: "/thailand/blogs/b3.jpg",
     },
     {
       id: 4,
@@ -38,13 +35,14 @@ export default function ThailandBlogs() {
       description:
         "A serene blend of history and nature — explore the northern charm of Thailand’s cultural heart.",
       tag: "Adventure",
-      image:
-          "/thailand/blogs/b4.jpg",
+      image: "/thailand/blogs/b4.jpg",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 py-20 flex justify-center">
+    <section
+      className={`py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 flex justify-center ${lato.className}`}
+    >
       <div className="w-[80%]">
         {/* Heading */}
         <motion.div
@@ -56,14 +54,11 @@ export default function ThailandBlogs() {
           <h2 className="text-6xl font-bold text-[#008c91] tracking-tight">
             Thailand Blogs
           </h2>
-          {/* <button className="flex items-center text-[#008c91] border border-[#008c91] px-5 py-2 rounded-full hover:bg-[#008c91] hover:text-white transition">
-            Show More <ArrowRight className="ml-2 w-4 h-4" />
-          </button> */}
         </motion.div>
 
-        {/* blog grid */}
+        {/* Blog grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-stretch">
-          {/* left column */}
+          {/* Left column */}
           <div className="flex flex-col gap-6 justify-between md:col-span-1">
             {blogs.slice(0, 2).map((blog) => (
               <motion.div
@@ -96,7 +91,7 @@ export default function ThailandBlogs() {
             ))}
           </div>
 
-          {/* center big card (double width) */}
+          {/* Center big card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +119,7 @@ export default function ThailandBlogs() {
             </div>
           </motion.div>
 
-          {/* right column */}
+          {/* Right column */}
           <div className="flex flex-col gap-6 justify-between md:col-span-1">
             {blogs.slice(2, 4).map((blog) => (
               <motion.div

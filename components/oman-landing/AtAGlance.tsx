@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { lato } from "@/lib/fonts";
 
 export default function AtAGlance() {
   const views = [
@@ -48,7 +49,8 @@ export default function AtAGlance() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-amber-50 to-white">
+  <section className={`${lato.variable} py-20 bg-gradient-to-br from-amber-50 to-white`}>
+
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">

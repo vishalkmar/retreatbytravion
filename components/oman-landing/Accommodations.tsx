@@ -1,6 +1,7 @@
 
 "use client"
 import { Star, MapPin } from 'lucide-react';
+import { lato } from '@/lib/fonts';
 
 export default function Accommodations() {
   const properties = [
@@ -31,7 +32,7 @@ export default function Accommodations() {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-stone-50">
+    <section className= { ` ${lato.variable} py-16 lg:py-24 bg-stone-50`}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">

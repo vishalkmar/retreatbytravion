@@ -1,8 +1,11 @@
 import React from "react";
+import { lato } from "@/lib/fonts";
 
 const SeychellesAbout = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-16 lg:pt-[120px] lg:pb-[90px] bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900">
+    <section
+      className={`${lato.className} relative overflow-hidden pt-20 pb-16 lg:pt-[120px] lg:pb-[90px] bg-white`}
+    >
       <div className="absolute inset-0 opacity-10 bg-[url('/patterns/pattern.svg')] bg-cover bg-center"></div>
 
       <div className="container relative z-10 mx-auto px-6 lg:px-8">
@@ -14,7 +17,7 @@ const SeychellesAbout = () => {
                 <div className="py-3 sm:py-4">
                   <img
                     src="/seychelles/about/ab1.avif"
-                    alt=""
+                    alt="Beach resort"
                     className="w-full rounded-2xl border border-amber-400/40 shadow-2xl hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -22,7 +25,7 @@ const SeychellesAbout = () => {
                 <div className="py-3 sm:py-4">
                   <img
                     src="/seychelles/about/ab3.jpg"
-                    alt=""
+                    alt="Luxury villas"
                     className="w-full rounded-2xl border border-amber-400/40 shadow-2xl hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -32,7 +35,7 @@ const SeychellesAbout = () => {
                 <div className="relative z-10 my-4">
                   <img
                     src="/seychelles/about/ab2.avif"
-                    alt=""
+                    alt="Seychelles nature"
                     className="w-full rounded-2xl border border-amber-400/40 shadow-2xl hover:scale-105 transition-transform duration-500"
                   />
                   <span className="absolute -right-7 -bottom-7 z-[-1] opacity-60">
@@ -61,9 +64,9 @@ const SeychellesAbout = () => {
 
           {/* ---------- RIGHT TEXT ---------- */}
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="mt-10 lg:mt-0 bg-teal-900/40 backdrop-blur-sm border border-teal-700/40 shadow-xl rounded-3xl p-10">
+            <div className="mt-10 lg:mt-0 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 border border-teal-700/40 shadow-xl rounded-3xl p-10">
               <p className="text-emerald-400 text-lg font-semibold uppercase tracking-widest mb-4">
-                Seychelles 
+                Seychelles
               </p>
               <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
                 About Us

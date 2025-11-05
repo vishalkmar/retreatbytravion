@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
+import { lato } from "@/lib/fonts"
 export default function MomentsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -59,7 +59,8 @@ export default function MomentsCarousel() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 py-16 px-4 md:px-8">
+   <div className={`${lato.variable} min-h-screen bg-gray-900 py-16 px-4 md:px-8`}>
+
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
