@@ -1,72 +1,53 @@
-import { MapPin, Users, Star, Calendar } from 'lucide-react';
+import { ChevronDown } from "lucide-react";
 
-export default function Hero() {
+function HeroLanding() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 lg:pt-20">
+    <section className="relative mt-[80px] h-screen w-full overflow-hidden">
+      {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0"
         style={{
-          backgroundImage: 'url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/banner-oman-2-5BcH8r24qNwBuBKaO1AdmBkb2v4ABx.jpg)',
+          backgroundImage: 'url("/oman/banner2.jpg")', // Oman desert / mountainscape
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div> */}
+        {/* ✨ Softer Overlay Gradient — makes image glow instead of dark */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#fff8e1]/5 via-[#e5b46b]/10 to-[#3b250d]/40"></div>
+
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 py-20">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Unforgettable Family Adventures<br />
-            <span className="text-white">In the Heart of Oman</span>
-          </h1>
-          <p className="text-lg md:text-xl mb-8 text-gray-200">
-            Discover the magic of Oman with expertly curated family tours, luxury stays, and authentic cultural experiences
-          </p>
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
+        <h1 className="text-4xl md:text-7xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+          Discover{" "}
+          <span className="block text-amber-300  mt-2">
+            Oman’s Tranquility
+          </span>
+        </h1>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 flex items-center gap-3">
-              <MapPin className="text-amber-400" size={24} />
-              <div className="text-left">
-                <p className="text-sm text-white-300">Destination</p>
-                <p className="font-semibold">Muscat, Oman</p>
-              </div>
-            </div>
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mb-12 text-amber-50 font-light leading-relaxed drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]">
+          From golden dunes to serene wadis — experience the timeless beauty of Oman’s landscapes,
+          where peace and adventure meet under desert skies.
+        </p>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 flex items-center gap-3">
-              <Calendar className="text-amber-400" size={24} />
-              <div className="text-left">
-                <p className="text-sm text-gray-300">Duration</p>
-                <p className="font-semibold">5-7 Days</p>
-              </div>
-            </div>
+        <div className="flex flex-col sm:flex-row gap-4 mb-20">
+          <button className="px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold rounded-full hover:scale-105 hover:shadow-[0_0_25px_rgba(251,191,36,0.6)] transition-all duration-300">
+            Explore Packages
+          </button>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 flex items-center gap-3">
-              <Users className="text-amber-400" size={24} />
-              <div className="text-left">
-                <p className="text-sm text-gray-300">Group Size</p>
-                <p className="font-semibold">2-15 People</p>
-              </div>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 flex items-center gap-3">
-              <Star className="text-amber-400" size={24} />
-              <div className="text-left">
-                <p className="text-sm text-gray-300">Rating</p>
-                <p className="font-semibold">4.9/5</p>
-              </div>
-            </div>
-          </div>
-
-          <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg">
-            Explore Tours
+          <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-full border border-amber-200/50 hover:bg-white/20 hover:scale-105 hover:shadow-lg transition-all duration-300">
+            Book Your Retreat
           </button>
         </div>
-      </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white rounded-full"></div>
+        {/* Scroll Down Icon */}
+        <div className="absolute bottom-10 animate-bounce">
+          <ChevronDown className="w-8 h-8 text-amber-200 opacity-90" />
         </div>
       </div>
     </section>
   );
 }
+
+export default HeroLanding;
