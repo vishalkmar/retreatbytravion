@@ -2,12 +2,10 @@ function SeychellesPricing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 flex items-center justify-center p-6">
       <div className="max-w-6xl w-full bg-teal-900/40  overflow-hidden  border border-teal-700/30">
-        <h1
-          className="text-6xl md:text-7xl font-bold tracking-wide text-center py-[50px] text-white drop-shadow-md"
-         
-        >
+       
+         <h2 className="md:text-6xl text-center py-[40px] font-extrabold text-emerald-400 tracking-wide mb-3">
           Seychelles Pricing
-        </h1>
+        </h2>
         <div className="grid md:grid-cols-2 gap-0">
           <div className="relative h-[600px] md:h-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-transparent z-10"></div>
@@ -31,17 +29,17 @@ function SeychellesPricing() {
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   />
                 </svg>
-                <h3 className="text-2xl font-light text-white tracking-wider">
-                  HOTEL & SPA
-                </h3>
+                
               </div>
-              <p className="text-teal-200 text-sm tracking-widest uppercase">
-                A spot of paradise
-              </p>
+              
             </div>
           </div>
 
           <div className="p-10 md:p-12 flex flex-col justify-center">
+             <div className=" mb-10">
+        
+                <h2 className="text-left md:text-5xl text-white">₹44,999</h2>
+              </div>
             <div className="mb-10">
               <h2 className="text-3xl font-light text-white mb-6 tracking-wide">
                 What's Included
@@ -103,9 +101,9 @@ function SeychellesPricing() {
             </div>
 
             <div className="mt-10">
-              <button className="w-full bg-amber-500 hover:bg-amber-600 text-teal-900 font-medium py-4 px-6 rounded-lg transition-colors duration-300 tracking-wide uppercase text-sm shadow-lg hover:shadow-xl">
+              {/* <button className="w-full bg-amber-500 hover:bg-amber-600 text-teal-900 font-medium py-4 px-6 rounded-lg transition-colors duration-300 tracking-wide uppercase text-sm shadow-lg hover:shadow-xl">
                 Book Now
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

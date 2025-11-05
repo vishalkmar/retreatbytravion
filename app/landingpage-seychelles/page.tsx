@@ -1,6 +1,5 @@
-import ContactCTASectionLanding from "@/components/seychells-landing/ContactCTASectionLanding";
-// import FooterLanding from "@/components/landing1/FooterLanding";
-// import HeaderLanding from "@/components/landing1/landing1/HeaderLanding";
+
+
 import HeroLanding from "@/components/seychells-landing/HeroLanding";
 
 import SeychellesExperienceSection from "@/components/seychells-landing/WellnessProgramsLanding";
@@ -21,12 +20,11 @@ export default function LandingPage() {
             <HeroLanding />
             <SeychellesAbout/>
             <Accommodation/>
-            <SeychellesGallery/>
-            <SeychellesItinerary/>
-            <SeychellesExperienceSection />
             <SeychellesPricing/>
+            <SeychellesItinerary/>
+            <SeychellesGallery/>
+            <SeychellesExperienceSection />
             <CTASectionLanding />
-            <ContactCTASectionLanding />
             <SiteFooter />
     </div>
   );
