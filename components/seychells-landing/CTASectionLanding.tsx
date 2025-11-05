@@ -14,15 +14,17 @@ const CTASectionLanding = () => {
 
       <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-[20px] py-12 px-10 text-center shadow-[0_10px_40px_rgba(0,0,0,0.2)] w-[calc(100%-200px)] max-w-[1400px]">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-wide drop-shadow-md">
-          Ready to Experience True Wellness?
-        </h2>
+       {/* Heading */}
+<h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-wide drop-shadow-md">
+  Ready to Discover Paradise in Seychelles?
+</h2>
 
-        {/* Subtext */}
-        <p className="text-base text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-          Join us at one of our carefully selected retreat locations and begin
-          your journey toward holistic healing and inner peace.
-        </p>
+{/* Subtext */}
+<p className="text-base text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+  From turquoise waters to lush island escapes — immerse yourself in the serene beauty of Seychelles. 
+  Let every sunrise, every wave, and every breeze remind you what true tranquility feels like.
+</p>
+
 
         {/* Button */}
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
