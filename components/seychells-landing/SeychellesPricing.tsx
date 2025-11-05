@@ -38,7 +38,7 @@ function SeychellesPricing() {
           <div className="p-10 md:p-12 flex flex-col justify-center">
              <div className=" mb-10">
         
-                <h2 className="text-left md:text-5xl text-white">₹44,999</h2>
+                <h2 className="text-left text-5xl text-white">₹44,999</h2>
               </div>
             <div className="mb-10">
               <h2 className="text-3xl font-light text-white mb-6 tracking-wide">

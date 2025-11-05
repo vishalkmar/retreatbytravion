@@ -20,8 +20,8 @@ export default function LandingPage() {
             <HeroLanding />
             <SeychellesAbout/>
             <Accommodation/>
-            <SeychellesPricing/>
             <SeychellesItinerary/>
+            <SeychellesPricing/>
             <SeychellesGallery/>
             <SeychellesExperienceSection />
             <CTASectionLanding />

@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 
 function HeroLanding() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative mt-[80px] h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0"

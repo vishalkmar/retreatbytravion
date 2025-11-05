@@ -7,7 +7,7 @@ const WaterWave = dynamic(() => import("react-water-wave"), { ssr: false });
 
 export default function HeroLanding() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative mt-[80px]  h-screen w-full overflow-hidden">
       {/* Water ripple background */}
       <WaterWave
         imageUrl="/seychelles/banner.jpg"

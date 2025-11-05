@@ -54,7 +54,7 @@ export default function HotelResortHero() {
   };
 
   return (
-    <div className="min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#e0f7fa] via-white to-[#caf0f8] relative">
+    <div className="min-h-screen pt-[60px] w-full overflow-hidden bg-gradient-to-br from-[#e0f7fa] via-white to-[#caf0f8] relative">
       {/* ---------------- HERO SECTION ---------------- */}
       <div className="relative h-[70vh] md:h-[75vh] flex items-center px-6 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
