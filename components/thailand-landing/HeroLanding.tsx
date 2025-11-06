@@ -1,26 +1,52 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { lato } from "@/lib/fonts";
 
-function HeroLanding() {
+const images = [
+   "/thailand/hero/banner1.avif",
+   "/thailand/hero/banner2.avif",
+   "/thailand/hero/banner3.jpg",
+   "/thailand/hero/banner4.jpg",
+   "/thailand/hero/banner5.webp",
+   "/thailand/hero/banner6.webp",
+];
+
+export default function HeroLanding() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000); // ⏱️ change every 4 seconds
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section
       className={`${lato.className} relative mt-[80px] h-screen w-full overflow-hidden`}
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      {/* 🔄 Background Carousel */}
+      <div className="absolute inset-0">
+        {images.map((img, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${
+              i === current ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+            }}
+          />
+        ))}
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-900/40 to-blue-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-900/40 to-blue-950/80" />
       </div>
 
-      {/* Content */}
+      {/* ✨ Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
         <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-lg">
           Discover{" "}
@@ -44,13 +70,25 @@ function HeroLanding() {
           </button>
         </div>
 
-        {/* Scroll Down Icon */}
-        <div className="absolute bottom-10 animate-bounce">
+        {/* ⬇️ Scroll Down Icon */}
+        <div className="absolute bottom-14 animate-bounce">
           <ChevronDown className="w-8 h-8 text-cyan-200 opacity-80" />
+        </div>
+
+        {/* ⚪ Dots (Indicators) */}
+        <div className="absolute bottom-6 flex gap-3">
+          {images.map((_, i) => (
+            <div
+              key={i}
+              className={`w-3 h-3 rounded-full transition-all duration-500 ${
+                i === current
+                  ? "bg-gradient-to-r from-cyan-400 to-sky-500 scale-125"
+                  : "bg-white/40"
+              }`}
+            ></div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-export default HeroLanding;

@@ -80,11 +80,11 @@ export default function Accommodations() {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <button className=" bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
             View More
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

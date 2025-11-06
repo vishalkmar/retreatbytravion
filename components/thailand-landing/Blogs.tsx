@@ -100,7 +100,7 @@ export default function ThailandBlogs() {
           >
             <div className="relative h-[300px] sm:h-[450px] md:h-[580px] w-full">
               <Image
-                src={blogs[1].image}
+                src="/thailand/blogs/last.avif"
                 alt={blogs[1].title}
                 fill
                 className="object-cover"

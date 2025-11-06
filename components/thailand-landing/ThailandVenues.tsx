@@ -28,12 +28,12 @@ export default function ThailandVenuesGallery() {
           />
           <img
             className="h-auto max-w-full rounded-lg object-cover object-center"
-            src="/thailand/venues/v3.avif"
+            src="/thailand/venues/two.jpg"
             alt="Chiang Mai Venue"
           />
           <img
             className="h-auto max-w-full rounded-lg object-cover object-center"
-            src="/thailand/venues/v2.avif"
+            src="/thailand/venues/three.avif"
             alt="Krabi Venue"
           />
         </div>
@@ -46,7 +46,7 @@ export default function ThailandVenuesGallery() {
           />
           <img
             className="h-auto max-w-full rounded-lg object-cover object-center"
-            src="/thailand/venues/v5.avif"
+            src="/thailand/venues/five.avif"
             alt="Koh Samui Venue"
           />
           <img
@@ -77,7 +77,7 @@ export default function ThailandVenuesGallery() {
         <div className="grid gap-4">
           <img
             className="h-auto max-w-full rounded-lg object-cover object-center"
-            src="/thailand/venues/v10.jpg"
+            src="/thailand/venues/one.avif"
             alt="Hilltop Venue"
           />
           <img
