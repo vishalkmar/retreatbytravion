@@ -41,15 +41,15 @@ export default function BlogGuides() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
           {/* Title */}
           <div>
-            <h1 className="text-5xl font-bold text-green-700 mb-2">
-              Blog & Travel <span className="text-amber-500">Guides</span>
+            <h1 className="text-4xl md:text-6xl  font-bold text-green-700 mb-2">
+              Blog & Travel <span className="text-[#a87000]">Guides</span>
             </h1>
-            <div className="w-32 h-1 bg-amber-500 rounded-full"></div>
+          
           </div>
 
           {/* Description */}
           <div className="lg:w-1/3">
-            <p className="text-gray-700 leading-relaxed text-sm">
+            <p className="text-gray-700 leading-relaxed text-[1rem]">
               Oman offers rich culture, stunning landscapes, and warm
               hospitality. Visit between October and April for the best
               experience.
@@ -81,10 +81,8 @@ export default function BlogGuides() {
                 <h2 className="text-white text-3xl font-bold mb-3">
                   Unforgettable Desert Adventures for All Ages
                 </h2>
-                <p className="text-white/90 text-sm mb-4">
-                  Apr 10, 2025 · 8 min read
-                </p>
-                <p className="text-white/80 text-sm leading-relaxed">
+               
+                <p className="text-white/80 text-[1rem] leading-relaxed">
                   Oman offers rich culture, stunning landscapes, and warm
                   hospitality. Visit between October and April for the best
                   experience.
@@ -109,15 +107,13 @@ export default function BlogGuides() {
 
                 {/* Content */}
                 <div className="flex-1">
-                  <p className="text-green-700 text-xs font-bold tracking-wider mb-1">
+                  <p className="text-amber-500 text-1xl font-bold tracking-wider mb-1">
                     {post.category}
                   </p>
-                  <h3 className="text-gray-900 font-bold text-sm mb-2 group-hover:text-green-700 transition-colors">
+                  <h3 className="text-gray-500 font-thin text-sm mb-2  transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-500 text-xs">
-                    {post.date} · {post.readTime}
-                  </p>
+                 
                 </div>
               </div>
             ))}
@@ -127,8 +123,8 @@ export default function BlogGuides() {
 
       {/* Explore More Button */}
       <div className="flex justify-center mt-12">
-        <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors">
-          Explore more
+        <button className=" bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold py-3 px-8 rounded-full ">
+          Book Now
         </button>
       </div>
     </div>

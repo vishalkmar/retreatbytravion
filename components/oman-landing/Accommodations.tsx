@@ -32,13 +32,13 @@ export default function Accommodations() {
   ];
 
   return (
-    <section className= { ` ${lato.variable} py-16 lg:py-24 bg-stone-50`}>
+    <section className= { ` ${lato.variable} py-16 lg:py-24 bg-gradient-to-br from-amber-50 via-white to-amber-100`}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#a87000]   mb-4">
             Accommodations
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
+          <p className="text-gray-600 max-w-3xl mx-auto text-base text-[1rem]">
             Escape to Bahrain's garden oasis and diving areas, family-friendly stays at top of Oman.
             Our accommodations blend luxury with local charm, ensuring comfort and authentic experiences.
           </p>
@@ -71,7 +71,7 @@ export default function Accommodations() {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-bold text-teal-700">{property.price}</span>
-                  <button className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-2 rounded-lg transition-colors">
+                  <button className=" bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-6 py-2 rounded-lg transition-colors">
                     Book
                   </button>
                 </div>
@@ -81,7 +81,7 @@ export default function Accommodations() {
         </div>
 
         <div className="text-center">
-          <button className="bg-teal-700 hover:bg-teal-800 text-white px-8 py-3 rounded-lg transition-colors">
+          <button className=" bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
             View More
           </button>
         </div>

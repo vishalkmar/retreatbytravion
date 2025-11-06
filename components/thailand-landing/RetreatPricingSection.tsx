@@ -59,12 +59,12 @@ export default function ItinerarySection() {
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl font-bold text-[#12394a] mb-3 text-center lg:text-left"
+            className="text-3xl md:text-6xl font-bold text-[#12394a] mb-3 text-center lg:text-left"
           >
-            Thailand <span className="text-[#00a3af]">Retreat Experience</span>
+            Thailand <span className="text-[#008c91]">Retreat Experience</span>
           </motion.h2>
 
-          <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed text-center lg:text-left max-w-lg">
+          <p className="text-gray-600 text-[1rem] mb-6 leading-relaxed text-center lg:text-left max-w-lg">
             Discover serene beaches, lush islands, and the charm of Thai culture
             — a perfect balance of peace and adventure.
           </p>
@@ -88,7 +88,7 @@ export default function ItinerarySection() {
               transition={{ duration: 0.6 }}
               className="bg-white/70 backdrop-blur-lg rounded-2xl p-5 border border-white/40 shadow-sm flex flex-col justify-between"
             >
-              <h3 className="text-xl font-semibold text-[#009ea3] mb-4 flex items-center gap-2">
+              <h3 className="text-2xl font-semibold text-[#009ea3] mb-4 flex items-center gap-2">
                 <CheckCircle2 className="text-[#00b3b3]" />
                 Included
               </h3>
@@ -96,9 +96,9 @@ export default function ItinerarySection() {
                 {inclusions.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-3 hover:translate-x-1 transition-transform"
+                    className="flex text-gray-700 text-base text-[1rem] font-light leading-relaxed items-start gap-3 hover:translate-x-1 transition-transform"
                   >
-                    <span className="w-2 h-2 mt-2 bg-[#00a3af] rounded-full"></span>
+                    
                     {item}
                   </li>
                 ))}
@@ -112,7 +112,7 @@ export default function ItinerarySection() {
               transition={{ duration: 0.6 }}
               className="bg-white/70 backdrop-blur-lg rounded-2xl p-5 border border-white/40 shadow-sm flex flex-col justify-between"
             >
-              <h3 className="text-xl font-semibold text-[#ff6f6f] mb-4 flex items-center gap-2">
+              <h3 className="text-2xl font-semibold text-[#ff6f6f] mb-4 flex items-center gap-2">
                 <XCircle className="text-[#ff6f6f]" />
                 Not Included
               </h3>
@@ -120,9 +120,9 @@ export default function ItinerarySection() {
                 {exclusions.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-3 hover:translate-x-1 transition-transform"
+                    className="flex text-gray-700 text-base text-[1rem] font-light leading-relaxed items-start gap-3 hover:translate-x-1 transition-transform"
                   >
-                    <span className="w-2 h-2 mt-2 bg-[#ff6f6f] rounded-full"></span>
+                    
                     {item}
                   </li>
                 ))}
@@ -161,7 +161,7 @@ export default function ItinerarySection() {
           {/* CTA Section */}
           <div className="w-full max-w-md bg-gradient-to-r from-[#00b6b3] to-[#009ea3] rounded-2xl p-6 text-center text-white shadow-xl hover:scale-[1.02] transition-transform duration-300">
             <h3 className="text-2xl font-semibold mb-2">Ready to Book?</h3>
-            <p className="text-white/90 mb-5 text-sm md:text-base">
+            <p className="text-white/90 mb-5 text-[1rem] md:text-base">
               Reserve your spot for the ultimate Thailand retreat experience!
             </p>
             <button className="bg-white text-[#009ea3] font-semibold px-6 py-3 rounded-full shadow-md hover:bg-[#e6f9f9] transition-colors">

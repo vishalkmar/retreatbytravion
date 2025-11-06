@@ -10,7 +10,7 @@ import ThailandBlogs from "@/components/thailand-landing/Blogs";
 import ThailandAccomodation from "@/components/thailand-landing/Accomodation";
 
 import ThailandVenuesGallery from "@/components/thailand-landing/ThailandVenues";
-import CTASectionLanding from "@/components/thailand-landing/CTASectionLanding";
+import CTASectionLanding from "@/components/thailand-landing/CTALandingSection";
 
 export default function LandingPage() {
   return (

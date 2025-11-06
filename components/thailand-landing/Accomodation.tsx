@@ -69,15 +69,15 @@ export default function HotelResortHero() {
           {/* LEFT CONTENT */}
           <div className="text-white space-y-6 md:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider text-[#023e8a] leading-tight font-extrabold">
+              <h1 className="text-4xl md:text-6xl   tracking-wider text-[#008c91] leading-tight font-extrabold">
                 Hotel & Accomodation
               </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl uppercase tracking-widest font-light text-[#00b4d8]">
+              <h2 className="text-xl  uppercase tracking-widest font-light text-[#00b4d8]">
                 All Included Service
               </h2>
             </div>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-xl font-light">
+            <p className="text-gray-700 text-base text=[1rem] leading-relaxed max-w-xl font-light">
               Experience the essence of Thai hospitality with handpicked resorts
               that blend comfort, culture, and coastal beauty. From serene
               beachfront villas to elegant city stays, every accommodation offers
@@ -141,8 +141,8 @@ export default function HotelResortHero() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-[#008c91]">{image.title}</h3>
-                    <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                    <h3 className="text-xl   font-semibold text-[#008c91]">{image.title}</h3>
+                    <p className="text-[1rem] text-gray-600 mt-1 line-clamp-2">
                       {image.description}
                     </p>
                   </div>

@@ -13,7 +13,8 @@ import BlogGuides from "@/components/oman-landing/BlogGuides";
 
 import Testimonial from "@/components/oman-landing/Testimonial";
 import ImageShowcase from "@/components/oman-landing/ImageShowcase";
-import CTASectionLanding from "@/components/oman/CTASectionLanding";
+
+import CTASectionLandingOman from "@/components/oman-landing/OmanCTALanding";
 
 export default function LandingPage() {
   return (
@@ -30,7 +31,7 @@ export default function LandingPage() {
       <BlogGuides />
       <Testimonial />
       <ImageShowcase />
-      <CTASectionLanding/>
+      <CTASectionLandingOman/>
       <SiteFooter />
     </div>
   );

@@ -70,6 +70,7 @@ export default function MomentsCarousel() {
           <div className="w-24 h-1 bg-amber-500 mt-4"></div>
         </div>
 
+
         {/* Main Content - Sidebar + Carousel */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Filter */}

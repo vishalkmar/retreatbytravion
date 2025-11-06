@@ -41,25 +41,25 @@ export default function ThailandBlogs() {
 
   return (
     <section
-      className={`py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 flex justify-center ${lato.className}`}
+      className={`py-16 sm:py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 flex justify-center px-4 ${lato.className}`}
     >
-      <div className="w-[80%]">
+      <div className="w-full max-w-[1300px]">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-between mb-10"
+          className="flex flex-col sm:flex-row items-center justify-between mb-10 text-center sm:text-left"
         >
-          <h2 className="text-6xl font-bold text-[#008c91] tracking-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#008c91] tracking-tight">
             Thailand Blogs
           </h2>
         </motion.div>
 
         {/* Blog grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {/* Left column */}
-          <div className="flex flex-col gap-6 justify-between md:col-span-1">
+          <div className="flex flex-col gap-6 md:col-span-1">
             {blogs.slice(0, 2).map((blog) => (
               <motion.div
                 key={blog.id}
@@ -68,7 +68,7 @@ export default function ThailandBlogs() {
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
               >
-                <div className="relative h-56 w-full">
+                <div className="relative h-48 sm:h-56 w-full">
                   <Image
                     src={blog.image}
                     alt={blog.title}
@@ -76,14 +76,14 @@ export default function ThailandBlogs() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4">
+                <div className="p-4 sm:p-5">
                   <span className="text-xs bg-[#e6f8f7] text-[#008c91] px-2 py-1 rounded-full">
                     {blog.tag}
                   </span>
-                  <h3 className="text-lg font-semibold mt-2 truncate">
+                  <h3 className="text-base sm:text-lg text-[#008c91] font-semibold mt-2">
                     {blog.title}
                   </h3>
-                  <p className="text-sm text-gray-600 line-clamp-2">
+                  <p className="text-sm sm:text-[1rem] text-gray-600 line-clamp-2">
                     {blog.description}
                   </p>
                 </div>
@@ -96,9 +96,9 @@ export default function ThailandBlogs() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all flex flex-col justify-between md:col-span-2"
+            className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all flex flex-col justify-between md:col-span-2 sm:col-span-2"
           >
-            <div className="relative h-[580px] w-full">
+            <div className="relative h-[300px] sm:h-[450px] md:h-[580px] w-full">
               <Image
                 src={blogs[1].image}
                 alt={blogs[1].title}
@@ -106,21 +106,21 @@ export default function ThailandBlogs() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6">
+            <div className="p-5 sm:p-6">
               <span className="text-xs bg-[#e6f8f7] text-[#008c91] px-3 py-1 rounded-full">
                 {blogs[1].tag}
               </span>
-              <h3 className="text-xl font-bold mt-3 truncate">
+              <h3 className="text-lg sm:text-xl text-[#008c91] font-bold mt-3">
                 {blogs[1].title}
               </h3>
-              <p className="text-sm text-gray-600 line-clamp-2">
+              <p className="text-sm sm:text-[1rem] text-gray-600 line-clamp-2">
                 {blogs[1].description}
               </p>
             </div>
           </motion.div>
 
           {/* Right column */}
-          <div className="flex flex-col gap-6 justify-between md:col-span-1">
+          <div className="flex flex-col gap-6 md:col-span-1">
             {blogs.slice(2, 4).map((blog) => (
               <motion.div
                 key={blog.id}
@@ -129,7 +129,7 @@ export default function ThailandBlogs() {
                 transition={{ duration: 0.5 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
               >
-                <div className="relative h-56 w-full">
+                <div className="relative h-48 sm:h-56 w-full">
                   <Image
                     src={blog.image}
                     alt={blog.title}
@@ -137,14 +137,14 @@ export default function ThailandBlogs() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4">
+                <div className="p-4 sm:p-5">
                   <span className="text-xs bg-[#e6f8f7] text-[#008c91] px-2 py-1 rounded-full">
                     {blog.tag}
                   </span>
-                  <h3 className="text-lg font-semibold mt-2 truncate">
+                  <h3 className="text-base sm:text-lg text-[#008c91] font-semibold mt-2">
                     {blog.title}
                   </h3>
-                  <p className="text-sm text-gray-600 line-clamp-2">
+                  <p className="text-sm sm:text-[1rem] text-gray-600 line-clamp-2">
                     {blog.description}
                   </p>
                 </div>

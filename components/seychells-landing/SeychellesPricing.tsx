@@ -7,9 +7,10 @@ function SeychellesPricing() {
     >
       <div className="max-w-6xl w-full bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden border border-teal-700/30 rounded-lg shadow-xl">
         {/* Heading */}
-        <h2 className="text-4xl md:text-6xl text-center py-[40px] font-extrabold text-emerald-400 tracking-wide mb-3">
-          Seychelles Pricing
-        </h2>
+       <h2 className="text-4xl md:text-6xl text-center py-[40px] font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
+      Seychelles Pricing
+</h2>
+
 
         <div className="grid md:grid-cols-2 gap-0">
           {/* Left Image Section */}

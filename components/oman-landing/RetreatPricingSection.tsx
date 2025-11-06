@@ -23,7 +23,7 @@ const RetreatPricingSection = () => {
   ];
 
   return (
-   <section className={`${lato.variable} relative overflow-hidden py-24 px-6 md:px-12 bg-gradient-to-b from-emerald-50 via-white to-teal-50`}>
+   <section className={`${lato.variable} relative overflow-hidden py-24 px-6 md:px-12 bg-gradient-to-br from-amber-50 via-white to-amber-100`}>
       {/* Floating blurred backgrounds */}
       <div className="absolute top-20 left-20 w-80 h-80 bg-emerald-200 opacity-30 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-300 opacity-25 blur-[150px] rounded-full"></div>
@@ -34,16 +34,16 @@ const RetreatPricingSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6"
+          className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6"
         >
-          Your <span className="text-emerald-600">Retreat Investment</span>
+          Your <span className="text-[#a87000]">Retreat Investment</span>
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
+          className="text-[1rem] text-gray-600 max-w-2xl mx-auto"
         >
           We believe wellness should be accessible — experience 3 transformative days in Oman designed to restore your energy and awaken your inner harmony.
         </motion.p>
@@ -65,7 +65,7 @@ const RetreatPricingSection = () => {
             </p>
             <a
               href="#"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-transform hover:scale-105"
+              className="inline-block  bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-transform hover:scale-105"
             >
               Reserve Your Spot
             </a>
@@ -81,7 +81,7 @@ const RetreatPricingSection = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="flex-1 bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-emerald-100 shadow-lg hover:shadow-2xl transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-emerald-700 mb-6 flex justify-center items-center gap-2">
+            <h3 className="text-2xl font-bold text-[#a87000] mb-6 flex justify-center items-center gap-2">
               <CheckCircle className="text-emerald-600 w-6 h-6" />
               What’s Included
             </h3>
@@ -105,7 +105,7 @@ const RetreatPricingSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="flex-1 bg-white/70 backdrop-blur-lg p-8 rounded-3xl border border-red-100 shadow-lg hover:shadow-2xl transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-teal-700 mb-6 flex justify-center items-center gap-2">
+            <h3 className="text-2xl font-bold text-[#a87000] mb-6 flex justify-center items-center gap-2">
               <XCircle className="text-teal-600 w-6 h-6" />
               What’s Not Included
             </h3>

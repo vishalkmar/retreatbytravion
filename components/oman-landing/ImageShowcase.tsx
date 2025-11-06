@@ -23,7 +23,7 @@ export default function ImageShowcase() {
   ];
 
   return (
-   <section className={`${lato.variable} py-16 lg:py-24 bg-white`}>
+   <section className={`${lato.variable} py-16 lg:py-24 bg-gradient-to-br from-amber-50 via-white to-amber-100`}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="space-y-6">
           {images.map((item) => (

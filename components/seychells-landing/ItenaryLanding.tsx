@@ -76,8 +76,8 @@ const SeychellesItinerary = () => {
 
       {/* ---------- HEADER SECTION ---------- */}
       <div className="w-full text-center py-20 px-4 relative z-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-4">
-          SEYCHELLES RETREAT ITINERARY
+        <h1 className="text-4xl md:text-6xl font-extrabold text-emerald-600 mb-4">
+          Seychelles Retreat Itinerary
         </h1>
         <p className="text-gray-600 text-[1rem] sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
           A 6-day transformational journey designed to help you unwind, reconnect,

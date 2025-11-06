@@ -8,7 +8,7 @@ export default function ThailandVenuesGallery() {
     >
       {/* -------- Heading Section -------- */}
       <div className="max-w-5xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-[#023e8a] mb-4">
+        <h2 className="text-4xl md:text-6xl font-bold  tracking-wider text-[#008c91] mb-4">
           At Glance of Thailand
         </h2>
         <p className="text-gray-700 text-base md:text-lg font-light max-w-2xl mx-auto leading-relaxed">

@@ -4,11 +4,11 @@
 import React, { useState } from "react";
 import RetreatInquiryForm from "@/components/retreatForm/RetreatInquiryForm";
 import { lato } from "@/lib/fonts";
-const CTASectionLanding = () => {
+const CTASectionLandingOman = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className= {`${lato.variable} w-full bg-gradient-to-br from-[#fceabb] via-[#f8d49d] to-[#f6b676] py-16 md:py-20 flex justify-center relative overflow-hidden px-4 sm:px-6`}>
+    <section className= {`${lato.variable} w-full bg-gradient-to-br from-amber-50 via-white to-amber-100 py-16 md:py-20 flex justify-center relative overflow-hidden px-4 sm:px-6`}>
       {/* Subtle overlay for soft glow */}
       <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]"></div>
 
@@ -29,7 +29,7 @@ const CTASectionLanding = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="bg-gradient-to-r from-[#f6b676] via-[#e89f43] to-[#d17b0f] text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,0,0,0.25)] hover:scale-[1.03] w-full sm:w-auto justify-center"
+            className=" bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,0,0,0.25)] hover:scale-[1.03] w-full sm:w-auto justify-center"
           >
             <svg
               className="w-5 h-5 sm:w-6 sm:h-6"
@@ -57,4 +57,4 @@ const CTASectionLanding = () => {
   );
 };
 
-export default CTASectionLanding;
+export default CTASectionLandingOman;

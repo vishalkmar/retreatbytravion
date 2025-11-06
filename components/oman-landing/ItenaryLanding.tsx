@@ -61,7 +61,7 @@ export default function DynamicOmanItinerary() {
       }}
     >
       {/* soft overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/70 via-emerald-800/60 to-emerald-900/80 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-amber-100 backdrop-blur-sm"></div>
 
       {/* glowing orbs */}
       <div className="absolute top-16 left-12 w-64 h-64 bg-teal-400/25 rounded-full blur-3xl"></div>
@@ -73,11 +73,11 @@ export default function DynamicOmanItinerary() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center text-4xl md:text-5xl font-extrabold mb-4"
+          className="text-center text-[#a87000]  text-4xl md:text-6xl font-extrabold mb-4"
         >
           Oman Journey Experience
         </motion.h2>
-        <div className="w-28 h-[3px] mx-auto bg-gradient-to-r from-green-400 via-teal-400 to-green-400 rounded-full mb-16"></div>
+       
 
         {/* Timeline */}
         <div className="relative before:absolute before:left-1/2 before:top-0 before:h-full before:w-[3px] before:bg-gradient-to-b before:from-teal-300 before:via-green-400 before:to-teal-500">
@@ -97,17 +97,17 @@ export default function DynamicOmanItinerary() {
               {/* Glass Card */}
               <motion.div
                 whileHover={{ scale: 1.03, rotate: index % 2 === 0 ? -1 : 1 }}
-                className="bg-gradient-to-br from-white/10 via-white/5 to-transparent 
+                className="  bg-gradient-to-b from-emerald-900/70 via-emerald-800/60 to-emerald-900/80
                            backdrop-blur-md border border-white/20 p-[2px] rounded-[2rem] 
                            mx-4 mt-8 md:mt-0 shadow-[0_8px_40px_rgba(0,0,0,0.2)]
                            hover:border-teal-400/40 transition-all duration-500"
               >
                 <div className="bg-white/10 backdrop-blur-xl rounded-[2rem] p-6 w-full md:w-[480px]">
                   <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-xl font-bold text-white drop-shadow-sm">
+                    <h3 className="text-2xl font-bold text-white drop-shadow-sm">
                       {day.title}
                     </h3>
-                    <span className="text-sm bg-teal-500/30 text-white px-3 py-1 rounded-full font-medium">
+                    <span className="text-sm  bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold px-3 py-1 rounded-full font-medium">
                       Day {day.day}
                     </span>
                   </div>
@@ -116,7 +116,7 @@ export default function DynamicOmanItinerary() {
                     {day.highlights.map((point, i) => (
                       <li
                         key={i}
-                        className="flex items-start text-gray-100 gap-2"
+                        className="flex items-startn text-[1rem] text-gray-100 gap-2"
                       >
                         <CheckCircle2 className="w-4 h-4 text-green-300 mt-1" />
                         <span className="leading-relaxed">{point}</span>

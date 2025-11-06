@@ -7,10 +7,10 @@ export default function AboutUs() {
     <section className ={`${lato.variable} py-20 bg-gradient-to-br from-amber-50 via-white to-amber-100`}>
       <div className="max-w-6xl mx-auto px-4 text-center">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-          About <span className="text-lime-700">Us</span>
+        <h2 className="text-4xl md:text-6xl font-bold text-[#a87000]  mb-2">
+          About Us
         </h2>
-        <p className="text-lime-600 font-medium mb-6">#omantrip</p>
+       
         <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-lg">
           At Oman Trip, we provide <span className="font-semibold">safe</span>,
           family-friendly travel experiences that combine adventure, culture, and
@@ -59,15 +59,13 @@ export default function AboutUs() {
 
         {/* Location & Tags */}
         <div className="mt-12">
-          <p className="text-gray-800 font-semibold mb-6 text-lg">
-            R61 Chalet, Bidiyah
-          </p>
+         
           <div className="flex flex-wrap justify-center gap-4">
             {["Desert View", "Palm View", "Sunrise View", "Sunset View"].map(
               (tag) => (
                 <button
                   key={tag}
-                  className="px-6 py-2 border border-gray-300 rounded-full text-gray-800 hover:bg-amber-100 transition-all"
+                  className="px-6 py-2 border border-gray-300 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-white font-semibold transition-all"
                 >
                   {tag}
                 </button>

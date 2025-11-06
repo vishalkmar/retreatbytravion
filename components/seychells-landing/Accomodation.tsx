@@ -11,7 +11,7 @@ export default function Accommodation() {
       {/* Heading */}
      <div className="text-center mb-16">
   <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
-    LUXURY ACCOMMODATION
+   Luxury Accommodation
   </h2>
   <p className="text-lg md:text-xl font-medium tracking-widest text-emerald-700">
     BOOK NOW & GET BENEFITS

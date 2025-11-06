@@ -68,8 +68,8 @@ const SeychellesAbout = () => {
               <p className="text-emerald-400 text-2xl font-semibold uppercase tracking-widest mb-4">
                 Seychelles
               </p>
-              <h2 className="text-6xl sm:text-5xl font-bold text-white mb-6 leading-tight">
-                About Us
+              <h2 className="text-3xl sm:text-6xl font-bold text-white mb-6 leading-tight">
+               About Us
               </h2>
               <p className="text-teal-100 mb-5 text-[1rem]leading-relaxed">
                 Make your customers happy by giving premium services and

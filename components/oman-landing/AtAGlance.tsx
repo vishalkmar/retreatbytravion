@@ -54,7 +54,7 @@ export default function AtAGlance() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
-            At A <span className="text-amber-500">Glance</span>
+            At A <span className="text-[#a87000]">Glance</span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             Discover the beauty of Oman through breath-taking photos. From golden dunes to cultural experiences, see the magic unfold. Get inspired for your next family adventure!

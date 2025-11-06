@@ -81,9 +81,10 @@ export default function ThailandItinerary() {
             <MapPin className="w-4 h-4" />
             5 Days Journey
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-            Thailand Itinerary
-          </h2>
+         
+           <h1 className="text-4xl md:text-6xl  tracking-wider text-[#008c91] leading-tight font-extrabold">
+             Thailand Itinerary
+              </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full"></div>
         </div>
 
@@ -120,7 +121,7 @@ export default function ThailandItinerary() {
 
                 <div className="lg:w-1/2 space-y-6">
                   <div className={`inline-block bg-gradient-to-r ${isEven ? 'from-blue-500 to-cyan-500' : 'from-cyan-500 to-blue-500'} text-transparent bg-clip-text`}>
-                    <h3 className="text-3xl md:text-4xl font-bold text-[#00a3af] ">{day.title}</h3>
+                    <h3 className=" text-xl md:text-2xl lg:text-3xl font-bold text-[#00a3af] ">{day.title}</h3>
                   </div>
 
                   <div className="space-y-1">
@@ -130,9 +131,9 @@ export default function ThailandItinerary() {
                         className="flex gap-4 items-start bg-white/70 backdrop-blur-sm p-2 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:translate-x-2 border border-blue-100"
                       >
                         <div className={`flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br ${isEven ? 'from-blue-400 to-cyan-400' : 'from-cyan-400 to-blue-400'} flex items-center justify-center shadow-lg`}>
-                          <Clock className="w-3 h-3 text-white" />
+                          <Clock className="w-3 h-3 text-white text-xs" />
                         </div>
-                        <p className="text-gray-700 text-base leading-relaxed pt-1.5">
+                        <p className="text-gray-700 text-base text-[1rem] leading-relaxed pt-1.5">
                           {highlight}
                         </p>
                       </div>

@@ -11,7 +11,7 @@ export default function AboutThailand() {
       <div className="absolute top-20 left-[-100px] w-96 h-96 bg-[#00b4d8]/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-[-120px] w-[420px] h-[420px] bg-[#0096c7]/20 rounded-full blur-3xl"></div>
 
-      <p className="uppercase text-center text-5xl tracking-widest text-[#00b4d8] font-semibold my-[50px]">
+      <p className=" text-center text-4xl sm:text-6xl tracking-widest text-[#008c91] font-extrabold my-[50px]">
         About Us
       </p>
 
@@ -45,16 +45,13 @@ export default function AboutThailand() {
             <span className="text-[#00b4d8]">Thailand Trip</span>
           </h2>
 
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 text-[1rem]">
             Discover the magic of Thailand with us — from golden temples and
             floating markets to white-sand beaches and lush jungles. Our expert
             planners curate unforgettable journeys for every traveler.
           </p>
 
-          <p className="text-[#0077b6] font-semibold mb-6">
-            Speak to our Destination Experts at{" "}
-            <span className="text-[#00b4d8]">+1 546 378 654</span>
-          </p>
+         
 
           {/* Bullet list */}
           <ul className="space-y-3 mb-8">
@@ -66,7 +63,7 @@ export default function AboutThailand() {
             ].map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 text-gray-800 font-[var(--font-lato)]"
+                className="flex items-start gap-3 text-gray-800 text-[1rem] font-[var(--font-lato)]"
               >
                 <span className="mt-1 w-5 h-5 rounded-full bg-[#00b4d8] flex items-center justify-center text-white text-xs">
                   ✓
