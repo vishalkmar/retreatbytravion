@@ -79,7 +79,7 @@ const SeychellesItinerary = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-emerald-600 mb-4">
           SEYCHELLES RETREAT ITINERARY
         </h1>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-[1rem] sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
           A 6-day transformational journey designed to help you unwind, reconnect,
           and embrace the natural beauty of Seychelles — where the ocean meets serenity.
         </p>
@@ -128,14 +128,14 @@ const SeychellesItinerary = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold uppercase mb-4 text-emerald-600 tracking-wide">
+              <h3 className="text-2xl font-semibold uppercase mb-4 text-emerald-600 tracking-wide">
                 {day.title}
               </h3>
 
               {/* Details */}
               <ul className="text-base text-gray-600 space-y-2 leading-relaxed max-w-xs">
                 {day.details.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i} className="text-[1rem] ">{item}</li>
                 ))}
               </ul>
             </div>

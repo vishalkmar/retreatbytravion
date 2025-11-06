@@ -52,11 +52,11 @@ export default function SeychellesShowcaseCarousel() {
       <div className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 z-10 grid lg:grid-cols-2 items-center gap-14 max-w-7xl mx-auto rounded-[24px] p-8 shadow-2xl border border-teal-700/40">
         {/* LEFT — Content */}
         <div className="relative space-y-8">
-          <h2 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
+          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-white">
             Discover <span className="text-emerald-400">Seychelles Blogs</span>
           </h2>
 
-          <p className="text-teal-100 text-lg leading-relaxed max-w-lg font-light">
+          <p className="text-teal-100 text-[1rem] leading-relaxed max-w-lg font-light">
             Where emerald waters kiss white sands — Seychelles awaits with its
             pristine beaches, island charm, and tropical serenity.
           </p>
@@ -128,9 +128,7 @@ export default function SeychellesShowcaseCarousel() {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  current === i ? "bg-emerald-400" : "bg-white/50 hover:bg-white/80"
-                }`}
+                className="w-3 h-3 bg-gradient-to-r from-emerald-500 via-cyan-500 to-teal-500 text-white rounded-full transition-all"
               />
             ))}
           </div>

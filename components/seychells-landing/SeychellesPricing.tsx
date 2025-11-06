@@ -7,7 +7,7 @@ function SeychellesPricing() {
     >
       <div className="max-w-6xl w-full bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 overflow-hidden border border-teal-700/30 rounded-lg shadow-xl">
         {/* Heading */}
-        <h2 className="md:text-6xl text-center py-[40px] font-extrabold text-emerald-400 tracking-wide mb-3">
+        <h2 className="text-4xl md:text-6xl text-center py-[40px] font-extrabold text-emerald-400 tracking-wide mb-3">
           Seychelles Pricing
         </h2>
 
@@ -47,7 +47,7 @@ function SeychellesPricing() {
 
             {/* Included */}
             <div className="mb-10">
-              <h2 className="text-3xl font-light mb-6 tracking-wide">
+              <h2 className="text-2xl font-light mb-6 tracking-wide">
                 What's Included
               </h2>
               <ul className="space-y-3">
@@ -71,7 +71,7 @@ function SeychellesPricing() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-sm leading-relaxed">{item}</span>
+                    <span className="text-[1rem] leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -79,7 +79,7 @@ function SeychellesPricing() {
 
             {/* Not Included */}
             <div className="border-t border-teal-700/50 pt-8">
-              <h2 className="text-3xl font-light mb-6 tracking-wide">
+              <h2 className="text-2xl font-light mb-6 tracking-wide">
                 What's Not Included
               </h2>
               <ul className="space-y-3">
@@ -101,7 +101,7 @@ function SeychellesPricing() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-sm leading-relaxed">{item}</span>
+                    <span className="text-[1rem]leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -109,7 +109,7 @@ function SeychellesPricing() {
 
             {/* CTA Button (optional) */}
             <div className="mt-10">
-              <button className="w-full bg-amber-500 hover:bg-amber-600 text-teal-900 font-medium py-4 px-6 rounded-lg transition-colors duration-300 tracking-wide uppercase text-sm shadow-lg hover:shadow-xl">
+              <button className="w-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-teal-500 text-white font-medium py-4 px-6 rounded-lg transition-colors duration-300 tracking-wide uppercase text-sm shadow-lg hover:shadow-xl">
                 Book Now
               </button>
             </div>

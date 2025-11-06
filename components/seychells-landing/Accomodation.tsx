@@ -10,7 +10,7 @@ export default function Accommodation() {
 
       {/* Heading */}
      <div className="text-center mb-16">
-  <h2 className="text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
+  <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
     LUXURY ACCOMMODATION
   </h2>
   <p className="text-lg md:text-xl font-medium tracking-widest text-emerald-700">
@@ -34,7 +34,7 @@ export default function Accommodation() {
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2">
                   Elegant Bedroom
                 </h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
+                <p className="text-gray-100text-[1rem] leading-relaxed">
                   Relax in a luxurious bedroom featuring modern design, soft
                   tones, and world-class amenities that redefine comfort.
                 </p>
@@ -49,7 +49,7 @@ export default function Accommodation() {
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2">
                   Cozy Lounge
                 </h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
+                <p className="text-gray-100 text-[1rem] leading-relaxed">
                   A perfect spot to unwind with a soothing ambiance, soft
                   lighting, and elegant décor that brings warmth to your stay.
                 </p>
@@ -77,7 +77,7 @@ export default function Accommodation() {
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2">
                   Modern Suite
                 </h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
+                <p className="text-gray-100 text-[1rem] leading-relaxed">
                   A spacious suite with curated interiors, plush furniture, and
                   a calm ambiance for your utmost relaxation.
                 </p>
@@ -92,7 +92,7 @@ export default function Accommodation() {
                 <h3 className="text-2xl font-bold text-emerald-400 mb-2">
                   Premium View
                 </h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
+                <p className="text-gray-100 text-[1rem] leading-relaxed">
                   Enjoy scenic views through large windows, designed to let you
                   experience serenity with style.
                 </p>

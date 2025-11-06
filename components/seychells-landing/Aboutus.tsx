@@ -65,25 +65,25 @@ const SeychellesAbout = () => {
           {/* ---------- RIGHT TEXT ---------- */}
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="mt-10 lg:mt-0 bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 border border-teal-700/40 shadow-xl rounded-3xl p-10">
-              <p className="text-emerald-400 text-lg font-semibold uppercase tracking-widest mb-4">
+              <p className="text-emerald-400 text-2xl font-semibold uppercase tracking-widest mb-4">
                 Seychelles
               </p>
-              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-6xl sm:text-5xl font-bold text-white mb-6 leading-tight">
                 About Us
               </h2>
-              <p className="text-teal-100 mb-5 text-lg leading-relaxed">
+              <p className="text-teal-100 mb-5 text-[1rem]leading-relaxed">
                 Make your customers happy by giving premium services and
                 unforgettable experiences. We design luxury journeys that blend
                 comfort, culture, and tropical beauty.
               </p>
-              <p className="text-teal-200 mb-8 leading-relaxed">
+              <p className="text-teal-200 mb-8 text-[1rem] leading-relaxed">
                 Discover pristine beaches, turquoise lagoons, and curated travel
                 experiences in Seychelles. We take care of every detail to make
                 your escape seamless and magical.
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center py-3 px-8 text-sm font-semibold uppercase rounded-lg bg-amber-500 hover:bg-amber-600 text-teal-900 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center justify-center py-3 px-8 text-sm font-semibold uppercase rounded-lg bg-gradient-to-r from-emerald-500 via-cyan-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Get Started
               </a>

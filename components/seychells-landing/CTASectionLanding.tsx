@@ -19,7 +19,7 @@ const CTASectionLanding = () => {
         </h2>
 
         {/* Subtext */}
-        <p className="text-sm sm:text-base md:text-lg text-white/90 mb-8 leading-relaxed max-w-2xl md:max-w-3xl mx-auto px-2">
+        <p className="text-[1rem]  text-white/90 mb-8 leading-relaxed max-w-2xl md:max-w-3xl mx-auto px-2">
           From turquoise waters to lush island escapes — immerse yourself in the serene beauty of Seychelles. 
           Let every sunrise, every wave, and every breeze remind you what true tranquility feels like.
         </p>

@@ -48,9 +48,9 @@ export default function SeychellesGallery() {
 
         {/* Center Text */}
         <div className="flex flex-col items-center justify-center h-[12%] ">
-          <h2 className="text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
+          <h2 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 bg-clip-text text-transparent tracking-wide mb-3 drop-shadow-sm">
         Seychelles Galary
-  </h2>
+    </h2>
         </div>
 
         {/* Bottom 3 Images */}
